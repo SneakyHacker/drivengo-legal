@@ -8,25 +8,539 @@
 :root{color-scheme:light dark}
 body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;max-width:46rem;margin:0 auto;padding:1.25rem 1.1rem 3rem;line-height:1.55;color:#1d1b16;background:#faf7f0}
 @media (prefers-color-scheme:dark){body{color:#ece9e1;background:#111410}a{color:#7fe3b8}}
-header{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;border-bottom:1px solid rgba(128,128,128,.35);padding-bottom:.6rem;margin-bottom:1.4rem;font-size:.95rem}
+header{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;flex-wrap:wrap;border-bottom:1px solid rgba(128,128,128,.35);padding-bottom:.6rem;margin-bottom:1.4rem;font-size:.95rem}
 header a{text-decoration:none;font-weight:600}
 nav a{margin-left:.8rem}
+.lang{margin-left:.8rem;padding-left:.8rem;border-left:1px solid rgba(128,128,128,.4);font-weight:400}
 h1{font-size:1.6rem;line-height:1.25}
 table{border-collapse:collapse;width:100%;font-size:.92rem;display:block;overflow-x:auto}
 th,td{border:1px solid rgba(128,128,128,.4);padding:.4rem .5rem;vertical-align:top;text-align:left}
+blockquote{margin:1rem 0;padding:.2rem 1rem;border-left:3px solid rgba(128,128,128,.4)}
 footer{margin-top:3rem;font-size:.85rem;opacity:.75;border-top:1px solid rgba(128,128,128,.35);padding-top:.6rem}
 </style>
 </head>
 <body>
-<header><a href="/drivengo-legal/">Drive &amp; Go</a><nav><a href="/drivengo-legal/legal/terms/">ÁSZF</a><a href="/drivengo-legal/legal/privacy/">Adatkezelés</a><a href="/drivengo-legal/support/">Támogatás</a></nav></header>
+<header><a href="/drivengo-legal/">Drive &amp; Go</a><nav><a href="/drivengo-legal/legal/terms/">ÁSZF</a><a href="/drivengo-legal/legal/privacy/">Adatkezelés</a><a href="/drivengo-legal/support/">Ügyfélszolgálat</a><a class="lang" href="/drivengo-legal/legal/terms/en/" lang="en">English</a></nav></header>
 <main>
-<h1 id="általános-szerződési-feltételek-ászf">Általános Szerződési
-Feltételek (ÁSZF)</h1>
-<p>A Drive &amp; Go alkalmazás Általános Szerződési Feltételeinek
-közzétehető változata <strong>2026. október 5-én</strong> jelenik meg
-ezen az oldalon.</p>
-<p>Kérdésed van? <a
-href="mailto:support@drivengo.hu">support@drivengo.hu</a></p>
+<h1 id="drive-go-általános-szerződési-feltételek">Drive &amp; Go —
+Általános Szerződési Feltételek</h1>
+<p><strong>Fogyasztóknak, a Drive &amp; Go alkalmazás
+felhasználóinak</strong></p>
+<p>Hatályos: 2026. október 5-től · Verzió: 1.0.4</p>
+<h2 id="a-szolgáltató-adatai">1. A Szolgáltató adatai</h2>
+<p>1.1. A Drive &amp; Go alkalmazást (a továbbiakban: Platform) a
+következő vállalkozás üzemelteti (a továbbiakban: Drive &amp; Go vagy
+Szolgáltató):</p>
+<ul>
+<li>cégnév: Jonatan Korlátolt Felelősségű Társaság (rövid név: Jonatan
+Kft.)</li>
+<li>székhely és postai cím: 2011 Budakalász, Tulipán utca 23.</li>
+<li>cégjegyzékszám: Cg. 13-09-239456 (nyilvántartja: a Budapest Környéki
+Törvényszék Cégbírósága)</li>
+<li>adószám: 26793656-2-13</li>
+<li>e-mail (ügyfélszolgálat és panasz): support@drivengo.hu</li>
+</ul>
+<p>1.2. <strong>Tárhelyszolgáltatók:</strong> a Platform szerverét a
+Render Services, Inc. (525 Brannan Street Ste 300, San Francisco, CA
+94107, USA; legal@render.com), az adatbázisát a Supabase Pte. Ltd. (65
+Chulia Street #38-02/03, OCBC Centre, Singapore 049513;
+legal@supabase.io), a weboldalát a GitHub, Inc. (88 Colin P. Kelly Jr.
+St., San Francisco, CA 94107, USA; privacy@github.com) biztosítja.</p>
+<p>1.3. A Felhasználók és a hatóságok a Drive &amp; Go-val
+elektronikusan, a support@drivengo.hu címen tarthatnak kapcsolatot; ez
+az egyedüli kapcsolattartó pont, és a leveleket nem kizárólag
+automatizált eszköz kezeli. A kapcsolattartás nyelve magyar vagy
+angol.</p>
+<h2 id="fogalmak">2. Fogalmak</h2>
+<p>2.1. <strong>Felhasználó:</strong> aki a Platformot használja.
+<strong>Fogyasztó:</strong> a szakmája, önálló foglalkozása vagy üzleti
+tevékenysége körén kívül eljáró természetes személy.</p>
+<p>2.2. <strong>Partner:</strong> a Platformon termékeit kínáló
+vállalkozás (kávézó, pékség, bolt stb.), amely a Termék eladója.</p>
+<p>2.3. <strong>Rendelés:</strong> a Felhasználó által a Platformon egy
+Partnertől leadott megrendelés. <strong>Termék:</strong> a Partner által
+kínált áru. <strong>Szolgáltatási díj:</strong> a Drive &amp; Go 6.3.
+pont szerinti díja. <strong>Átvételi pont:</strong> az a közterületi
+vagy magánterületi hely, amelyet a Platform a Partner közelében a
+megálláshoz megjelöl. <strong>Átvételi időablak:</strong> az 5.8. pont
+szerinti időtartam.</p>
+<h2 id="a-platform-működése-és-a-szerződések-szerkezete">3. A Platform
+működése és a szerződések szerkezete</h2>
+<p>3.1. A Platform online piac: a Felhasználó rajta keresztül
+Partnerektől vásárol Termékeket. A Drive &amp; Go <strong>nem
+eladója</strong> a Termékeknek.</p>
+<p>3.2. Egy Rendeléssel két szerződés jön létre:</p>
+<ul>
+<li><ol type="a">
+<li><strong>adásvételi szerződés</strong> a Felhasználó és a Partner
+között a Termékre;</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li><strong>szolgáltatási szerződés</strong> a Felhasználó és a Drive
+&amp; Go között: a Drive &amp; Go megszervezi az autós átvételt és
+kezeli a Rendelést, ennek ellenértéke a Szolgáltatási díj.</li>
+</ol></li>
+</ul>
+<p>3.3. <strong>A kötelezettségek megosztása</strong> a Partner és a
+Drive &amp; Go között:</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Kérdés</th>
+<th>Partner</th>
+<th>Drive &amp; Go</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a Termék ára, minősége, mennyisége, elkészítése</td>
+<td>felel</td>
+<td>—</td>
+</tr>
+<tr>
+<td>élelmiszer-információ, allergének</td>
+<td>megadja, és felel a pontosságukért</td>
+<td>megjeleníti, amit a Partner megad</td>
+</tr>
+<tr>
+<td>nyugta vagy számla a Termékről</td>
+<td>átadáskor kiállítja</td>
+<td>—</td>
+</tr>
+<tr>
+<td>kellékszavatosság, elállás a Termékre</td>
+<td>kötelezett</td>
+<td>a 8. és a 12. pont szerint közreműködik</td>
+</tr>
+<tr>
+<td>a Rendelés továbbítása, az Átvételi pont, az alkalmazás
+működése</td>
+<td>—</td>
+<td>felel</td>
+</tr>
+<tr>
+<td>a fizetés lebonyolítása (Stripe)</td>
+<td>a Termék árát kapja</td>
+<td>a Szolgáltatási díjat kapja</td>
+</tr>
+<tr>
+<td>számla a Szolgáltatási díjról</td>
+<td>—</td>
+<td>kiállítja</td>
+</tr>
+<tr>
+<td>ügyfélszolgálat, panaszfogadás</td>
+<td>a Termékért kellékszavatossággal felel</td>
+<td>minden panaszt fogad, és a Termékre vonatkozót a Partner nevében
+kivizsgálja és megválaszolja (12.4.)</td>
+</tr>
+</tbody>
+</table>
+<p>Ez a megosztás nem érinti sem a Partner, sem a Drive &amp; Go
+szerződés szerinti kötelezettségeit.</p>
+<p>3.4. <strong>A Partnerek vállalkozások.</strong> A Platformon csak
+vállalkozás lehet Partner, ezért a Felhasználót a Termékre a fogyasztói
+jogok megilletik.</p>
+<p>3.5. <strong>Rangsorolás.</strong> A Partnerek listájában elöl állnak
+az éppen nyitva tartó Partnerek, utánuk a zárva tartók. Ezen belül, ha a
+Felhasználó engedélyezte a helymeghatározást, a Partner távolsága dönt
+(a legközelebbi áll elöl), egyébként a Partner neve (betűrendben). A
+kezdőképernyő kiemelt helyén ugyanebben a sorrendben az első nyitva
+tartó Partner jelenik meg. A sorrendért a Partnerek nem fizetnek;
+fizetett kiemelés nincs.</p>
+<h2 id="felhasználói-fiók">4. Felhasználói fiók</h2>
+<p>4.1. A Partnerek és a Termékek böngészése regisztráció nélkül is
+lehetséges; Rendeléshez fiók kell. Regisztrálni e-mail-címmel, illetve —
+ahol az alkalmazás felajánlja — Apple- vagy Google-fiókkal lehet.</p>
+<p>4.2. Rendeléshez meg kell adni a Felhasználó
+<strong>telefonszámát</strong>, a jármű <strong>rendszámát és
+országjelzését</strong>, valamint a <strong>számlázási adatait</strong>
+(név és cím; céges számlánál a cég neve és adószáma). A rendszám az
+átvételkor az azonosítás eszköze; a telefonszámot a Partner a
+Rendeléssel kapcsolatos egyeztetésre látja; a számlázási adat a
+számlához kell (6.6.).</p>
+<p>4.3. A Felhasználó felel azért, hogy a megadott adatok valósak, és
+hogy a fiókját más nem használja.</p>
+<p>4.4. A Platformot csak 18. életévét betöltött személy használhatja;
+ezt a Felhasználó az első Rendelés előtt kijelenti (16.1.).</p>
+<p>4.5. A Felhasználó a fiókját bármikor törölheti az alkalmazásban, a
+Profil → Fiók törlése menüpontban; amíg aktív Rendelése van, a törlést a
+Rendelés lezárása után kezdeményezheti. Hogy törléskor mely adat marad
+meg és meddig, azt az Adatkezelési tájékoztató mondja meg.</p>
+<h2 id="a-rendelés-menete">5. A Rendelés menete</h2>
+<p>5.1. <strong>A szerződéskötés technikai lépései:</strong></p>
+<ol type="1">
+<li>a Felhasználó Termékeket tesz a kosárba; Rendelést legalább 1 000 Ft
+termékértéktől lehet leadni;</li>
+<li>a kosár összesítőjén áttekinti a Termékeket, a Termékek árát, a
+Szolgáltatási díjat és a fizetendő végösszeget, és a megrendelés
+elküldése előtt bármit módosíthat vagy törölhet;</li>
+<li>kiválasztja a fizetési módot (bankkártya, illetve — ahol az
+alkalmazás felajánlja — Apple Pay vagy Google Pay);</li>
+<li>a „Fizetési kötelezettséggel járó megrendelés” feliratú gombbal
+elküldi a Rendelést;</li>
+<li>a Platform a Rendelés beérkezését haladéktalanul visszaigazolja
+(5.4.);</li>
+<li>a Partner a Rendelést elfogadja vagy elutasítja (5.5.).</li>
+</ol>
+<p>5.2. <strong>Közvetlenül a megrendelés gombja előtt</strong> a
+Platform egyértelműen és jól láthatóan megjeleníti a Termékek lényeges
+tulajdonságait és a fizetendő végösszeget, minden díjjal együtt.</p>
+<p>5.3. Az ÁSZF magyarul és angolul érhető el; a szerződés nyelve az,
+amelyen a Felhasználó az alkalmazást használja (magyar vagy angol). A
+szerződés nem minősül írásba foglalt szerződésnek. A Drive &amp; Go a
+Rendelést rögzíti, és az a Felhasználó fiókjában, a rendelései között
+utólag is megtekinthető. A Drive &amp; Go magatartási kódexnek nem
+vetette alá magát.</p>
+<p>5.4. <strong>Visszaigazolás.</strong> A Drive &amp; Go a Rendelés
+beérkezését elektronikus úton haladéktalanul visszaigazolja. A megkötött
+szerződésről tartós adathordozón (e-mailben) visszaigazolást küld,
+legkésőbb az átadáskor; ez a 8.3. pont szerinti kérést és
+tudomásulvételt is megismétli. Ha a beérkezés visszaigazolása 48 órán
+belül nem érkezik meg, a Felhasználó mentesül az ajánlati kötöttség
+alól.</p>
+<p>5.5. <strong>A szerződés létrejötte.</strong> A Felhasználó Rendelése
+ajánlat. Az adásvételi szerződés a Partner elfogadásával jön létre. Ha a
+Partner a Rendelést elutasítja, vagy 5 percen belül nem fogadja el, a
+Rendelés megszűnik, és a 7.2. pont szerint minden összeg visszajár. A
+Felhasználó a Rendelést a Partner elfogadásáig visszavonhatja
+(7.1.).</p>
+<p>5.6. <strong>Elkészítés.</strong> A Partner a Termékeket a Rendelés
+elfogadása után készíti el. A Platform által mutatott elkészülési idő
+tájékoztató jellegű becslés.</p>
+<p>5.7. <strong>Átvételi útmutató.</strong> Az Átvételi pont pontos
+leírását (fotó, írott lépések, megállási zóna) a Platform a Partner
+elfogadása után mutatja meg; a Rendelés előtt egy külön gombbal is
+megtekinthető.</p>
+<p>5.8. <strong>Átvételi időablak.</strong> Az <strong>Átvételi
+időablak</strong> a Partner elfogadásától számítva legalább <strong>120
+percig</strong> tart, kivéve, ha a Partner előbb zár: ilyenkor a zárásig
+tart. Ha a Rendelést a Partner zárása előtt 120 percen belül adják le, a
+Platform a fizetés előtt jelzi a zárás időpontját. A Partner zárása
+előtt a Partner által beállított időn belül (alapértelmezés: 60 perc)
+Rendelés nem adható le.</p>
+<p>5.9. <strong>Érkezés.</strong> A Platform a Felhasználó érkezését
+helymeghatározással észleli; ha ez nem működik, a Felhasználó a
+„Megérkeztem” gombot használhatja. A gombot csak akkor szabad megnyomni,
+ha a Felhasználó ténylegesen az Átvételi ponton áll; minden megnyomást
+naplózunk.</p>
+<p>5.10. <strong>Átadás.</strong> A Partner a Termékeket a Felhasználó
+autójához viszi, és a megadott rendszám alapján adja át. A Termékről a
+Partner az átadáskor nyugtát vagy számlát ad.</p>
+<p>5.11. <strong>Lezárás.</strong> A Rendelés lezárul, amikor a Partner
+az átadást vagy a Felhasználó az átvételt rögzíti — amelyik előbb
+megtörténik. Ha egyikük sem rögzíti, a Rendelés az érkezéstől számított
+egy óra elteltével, vagy amikor a Felhasználó az Átvételi ponttól
+jelentősen eltávolodik — amelyik előbb bekövetkezik —, automatikusan
+lezárul.</p>
+<h2 id="árak-díjak-fizetés">6. Árak, díjak, fizetés</h2>
+<p>6.1. A Termékek árát a Partner határozza meg. Minden ár forintban, az
+általános forgalmi adóval együtt értendő.</p>
+<p>6.2. A fizetendő végösszeg = a Termékek ára + a Szolgáltatási díj.
+Más díjat a Drive &amp; Go nem számít fel.</p>
+<p>6.3. <strong>A Szolgáltatási díj</strong> a Termékek értékétől
+függ:</p>
+<table>
+<thead>
+<tr>
+<th>A Termékek értéke</th>
+<th>Szolgáltatási díj</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 000 – 1 999 Ft</td>
+<td>a Termékek értékének 15%-a + 200 Ft</td>
+</tr>
+<tr>
+<td>2 000 – 3 999 Ft</td>
+<td>15%</td>
+</tr>
+<tr>
+<td>4 000 – 6 999 Ft</td>
+<td>13%</td>
+</tr>
+<tr>
+<td>7 000 – 9 999 Ft</td>
+<td>12%</td>
+</tr>
+<tr>
+<td>10 000 – 14 999 Ft</td>
+<td>11%</td>
+</tr>
+<tr>
+<td>15 000 Ft-tól</td>
+<td>10%</td>
+</tr>
+</tbody>
+</table>
+<p>A Szolgáltatási díj az általános forgalmi adót tartalmazza. A 2 000
+Ft alatti kosárnál felszámított 200 Ft a Szolgáltatási díj része, nem
+külön díj.</p>
+<p>6.4. A Szolgáltatási díj a Drive &amp; Go szolgáltatásának
+ellenértéke; a fizetési mód használatáért külön díjat a Drive &amp; Go
+nem számít fel.</p>
+<p>6.5. <strong>Fizetés.</strong> A fizetést a Stripe pénzforgalmi
+szolgáltató bonyolítja. A Rendelés leadásakor a végösszeget a
+Felhasználó fizetési eszközén zároljuk vagy terheljük. Ha a Rendelés az
+átadás előtt megszűnik, a zárolást feloldjuk, illetve a terhelt összeget
+visszatérítjük (7.0.). A Termékek árát a Drive &amp; Go a Partner
+megbízásából és nevében, a Partner kereskedelmi ügynökeként szedi be; ez
+az összeg a Partnert illeti, és a Stripe a Partner Stripe-fiókjára
+továbbítja. A Szolgáltatási díj a Drive &amp; Go-t illeti.</p>
+<p>6.6. A Szolgáltatási díjról a Drive &amp; Go számlát állít ki, és azt
+elektronikus úton a Felhasználó rendelkezésére bocsátja.</p>
+<h2 id="lemondás-elutasítás-visszatérítés">7. Lemondás, elutasítás,
+visszatérítés</h2>
+<p>7.0. Ebben a pontban és a 8. pontban a „visszajár” azt jelenti: ha a
+végösszeget még csak zároltuk, az érintett részt nem terheljük (a
+zárolást feloldjuk); ha már terheltünk, azt visszatérítjük (7.6.).</p>
+<p>7.1. <strong>Lemondás a Partner elfogadásáig.</strong> Amíg a Partner
+a Rendelést nem fogadta el, a Felhasználó azt az alkalmazásban
+lemondhatja; ilyenkor minden összeg — a Szolgáltatási díj is —
+visszajár. A Partner elfogadása után a Felhasználó a Rendelést nem
+mondhatja le; ez nem érinti a 8. pont szerinti elállási jogot: nem
+romlandó Termékre a Felhasználó az elfogadás után, az átvétel előtt is
+elállhat.</p>
+<p>7.2. <strong>Teljes visszatérítés, a Szolgáltatási díjjal
+együtt</strong> jár, ha (a) a Partner a Rendelést elutasítja; (b) a
+Partner 5 percen belül nem fogadja el; (c) a Rendelés minden Terméke
+elfogy; (d) a Partner az elfogadás után rendkívüli ok (például tűz a
+konyhában) miatt nem tud teljesíteni, és ezt az ügyfélszolgálat
+rögzíti.</p>
+<p>7.3. <strong>Részleges készlethiány.</strong> Ha a Rendelés egyes
+Termékei elfogynak, de a többit a Partner átadja, <strong>csak a hiányzó
+Termékek ára jár vissza. A Szolgáltatási díj nem csökken: a Rendelés
+eredeti végösszegére számított díj marad érvényben</strong>, mert az
+autós átvétel szolgáltatását a Drive &amp; Go ilyenkor is teljes
+egészében nyújtja.</p>
+<p>7.4. <strong>Elmaradt átvétel.</strong> Ha a Felhasználó a Rendelést
+az Átvételi időablakon belül nem veszi át, a végösszegből a Partnert a
+Termékek teljes ára, a Drive &amp; Go-t a Szolgáltatási díj illeti, és
+visszatérítés nem jár; ha a végösszeget addig csak zároltuk, az időablak
+lejártakor terheljük.</p>
+<p>7.5. <strong>Panasz átadás után</strong> (hiányzó vagy hibás Termék,
+minőség, „nem kaptam meg”). A Felhasználó a 12.1. pont szerinti
+csatornákon panaszt vagy visszatérítési kérelmet nyújthat be; az
+ügyfélszolgálat minden esetet egyedileg vizsgál és rögzít. Ha a panasz
+megalapozott, legalább az érintett Termékek ára visszajár; ha a
+Felhasználó a Rendelést egyáltalán nem kapta meg, a teljes végösszeg, a
+Szolgáltatási díjjal együtt. A Felhasználónak a Partnerrel szemben
+fennálló kellékszavatossági jogait ez nem korlátozza: hibás teljesítés
+esetén kijavítást vagy kicserélést, ha ez nem lehetséges, árleszállítást
+kérhet vagy elállhat; igényét a teljesítéstől számított két éven belül
+érvényesítheti.</p>
+<p>7.6. <strong>A visszatérítés módja.</strong> A visszajáró összeget a
+Drive &amp; Go ugyanarra a fizetési eszközre utalja vissza, amellyel a
+Felhasználó fizetett; zárolás feloldásakor terhelés nem történik. A
+jóváírás ideje a Felhasználó bankjától függ.</p>
+<h2 id="elállási-jog">8. Elállási jog</h2>
+<p>8.1. <strong>Romlandó Termék.</strong> Romlandó vagy minőségét rövid
+ideig megőrző Termékre (például étel, ital, pékáru) a Felhasználót
+<strong>nem illeti meg</strong> a 14 napos elállási jog.</p>
+<p>8.2. <strong>Nem romlandó Termék.</strong> Más Termékre a Felhasználó
+az átvételtől számított <strong>14 napon belül indokolás nélkül
+elállhat</strong>. Az elállást (a) a 2. melléklet szerinti
+nyilatkozatmintával, (b) bármely egyértelmű nyilatkozattal, vagy (c) az
+alkalmazásban az <strong>„elállás a szerződéstől”</strong> funkcióval
+jelentheti be. A bejelentésről tartós adathordozón átvételi elismervényt
+küldünk. A Termék árát a Partner, a Szolgáltatási díjat a Drive &amp; Go
+az elállásról való tudomásszerzéstől számított 14 napon belül
+visszatéríti; ha a Felhasználó az átvétel előtt áll el, a zárolást
+feloldjuk, illetve a terhelt összeget visszatérítjük (7.0.). A Termék
+árát a Partner visszatarthatja, amíg a Termék vissza nem érkezik, vagy
+amíg a Felhasználó kétséget kizáróan nem igazolja, hogy visszaküldte — a
+kettő közül a korábbi időpontig. A Terméket a Felhasználó az elállás
+közlésétől számított 14 napon belül a Partner címére visszaküldi vagy a
+Partner üzletében átadja; a visszaküldés közvetlen költségét a
+Felhasználó viseli. Az elállás címzettje a Partner mint eladó; a
+nyilatkozatot a Drive &amp; Go a Partner nevében fogadja, és
+haladéktalanul továbbítja.</p>
+<p>8.3. <strong>A Drive &amp; Go szolgáltatása.</strong> A 3.2. (b) pont
+szerinti szolgáltatás az átadással maradéktalanul teljesül. A
+Felhasználó az első Rendelés előtti elfogadáskor (16.1.) kifejezetten
+kéri, hogy a Drive &amp; Go minden Rendelésénél a teljesítést azonnal
+megkezdje, és tudomásul veszi, hogy a szolgáltatás maradéktalan
+teljesítése után arra elállási joga nincs. Ez nem érinti a 8.2. pont
+szerinti elállást és annak a Szolgáltatási díjra gyakorolt hatását.</p>
+<h2 id="az-átvétel-helye-és-a-közlekedési-szabályok">9. Az átvétel helye
+és a közlekedési szabályok</h2>
+<p>9.1. A Felhasználó a járművet vezetőként a közlekedési szabályok
+betartásáért maga felel. Az Átvételi pont a Drive &amp; Go ajánlása: ha
+a helyszíni jelzés vagy a forgalmi helyzet a megállást nem engedi, a
+helyszíni szabály az irányadó, és a Felhasználó ne álljon meg.</p>
+<p>9.2. Ha az Átvételi ponton a megállás vagy a várakozás díjköteles, a
+díjat és az esetleges pótdíjat a jármű üzemben tartója viseli. A Drive
+&amp; Go ezt nem téríti meg; ha a Felhasználó zöld Átvételi ponton, az
+alkalmazás naplója szerint 5 percen belüli átadás közben kap pótdíjat,
+az ügyfélszolgálat kiadja neki az érkezés és az átadás időpontját a
+pótdíj vitatásához.</p>
+<p>9.3. A „Megérkeztem” gombra az 5.9. pont az irányadó; a gombbal való
+visszaélés a fiók felfüggesztését vonhatja maga után.</p>
+<p>9.4. <strong>Korhatáros Termékek.</strong> Alkoholtartalmú ital a
+Platformon nem rendelhető. Energiaitalt a Partner kétség esetén csak az
+életkor hitelt érdemlő igazolása mellett ad át; ha az igazolás elmarad,
+az átadást megtagadja, és az érintett Termék ára visszajár.</p>
+<h2 id="élelmiszer-információ-és-allergének">10. Élelmiszer-információ
+és allergének</h2>
+<p>10.1. A Termékekre vonatkozó élelmiszer-információt — köztük az
+allergéneket — a Partner adja meg, és ő felel a pontosságukért; a
+Platform a Partner által megadott adatokat a Rendelés előtt megjeleníti.
+Kérdés esetén a Felhasználó a Rendelés előtt a Partnertől
+érdeklődhet.</p>
+<h2 id="felelősség">11. Felelősség</h2>
+<p>11.1. A Drive &amp; Go a Termékekért nem felel; azokért a Partner
+mint eladó felel (3.3.). A Drive &amp; Go a saját szolgáltatásáért (3.2.
+(b)) — az általa igénybe vett közreműködőkért is — felel.</p>
+<p>11.2. A Drive &amp; Go törekszik a Platform folyamatos működésére;
+karbantartás vagy üzemzavar miatt a szolgáltatás átmenetileg
+szünetelhet.</p>
+<h2 id="panaszkezelés-és-ügyfélszolgálat">12. Panaszkezelés és
+ügyfélszolgálat</h2>
+<p>12.1. Panaszt — visszatérítési kérelmet is — e-mailben
+(support@drivengo.hu; az alkalmazásból is: Profil → Súgó és kapcsolat →
+E-mail küldése) és postán (2011 Budakalász, Tulipán utca 23.) lehet
+tenni.</p>
+<p>12.2. Az írásbeli panaszt a Drive &amp; Go a beérkezésétől számított
+30 napon belül írásban, érdemben megválaszolja; az elutasítást
+megindokolja. A szóbeli panaszt azonnal megvizsgálja; ha ez nem
+lehetséges, vagy a Felhasználó a panasz kezelésével nem ért egyet,
+jegyzőkönyvet vesz fel. A panaszt és a választ három évig megőrzi.</p>
+<p>12.3. A panasz elutasításakor a Drive &amp; Go írásban tájékoztatja a
+Felhasználót, mely hatósághoz vagy békéltető testülethez fordulhat, azok
+elérhetőségével. A Drive &amp; Go általános alávetési nyilatkozatot nem
+tett.</p>
+<p>12.4. A Termékre vonatkozó panaszt is a Drive &amp; Go-hoz lehet
+benyújtani: a Drive &amp; Go a Partner nevében fogadja, a Partnerrel
+egyeztet, és a 12.2. pont szerinti határidőben a Partner nevében is
+válaszol. A Felhasználó a Partnerhez közvetlenül is fordulhat.</p>
+<h2 id="jogorvoslat">13. Jogorvoslat</h2>
+<p>13.1. <strong>Békéltető testület.</strong> Fogyasztói jogvita esetén
+a Felhasználó a lakóhelye vagy tartózkodási helye szerinti békéltető
+testülethez fordulhat; kérelmére a kérelmében megjelölt testület jár el.
+A budapesti testület: <strong>Budapesti Békéltető Testület</strong>,
+székhely: 1016 Budapest, Krisztina krt. 99. I. em. 111., levelezési cím:
+1253 Budapest, Pf. 10., telefon: +36 1 488 2131, honlap:
+bekeltet.bkik.hu. A többi testület adatait a 3. melléklet
+tartalmazza.</p>
+<p>13.2. <strong>Hatóság és bíróság.</strong> A Felhasználó a
+fogyasztóvédelmi hatósághoz — általános hatáskörben a fővárosi és
+vármegyei kormányhivatalhoz — és bírósághoz is fordulhat. A
+kormányhivatalok elérhetősége: kormanyhivatalok.hu.</p>
+<h2 id="jogellenes-tartalom-bejelentése">14. Jogellenes tartalom
+bejelentése</h2>
+<p>14.1. Bárki bejelentheti, ha a Platformon (például egy Partner
+kínálatában) jogellenesnek tartott tartalmat talál: a
+support@drivengo.hu címen, a tartalom pontos helyével és a bejelentés
+indokával. A tartalom korlátozásáról az érintettnek indokolást
+adunk.</p>
+<h2 id="adatkezelés">15. Adatkezelés</h2>
+<p>15.1. A személyes adatok kezeléséről az Adatkezelési tájékoztató
+rendelkezik; elérhető az alkalmazásban (Profil → Rólunk és jogi) és a
+honlapunkon, az ÁSZF mellett. Az ÁSZF elfogadása <strong>nem</strong>
+hozzájárulás semmilyen adatkezeléshez. Az alkalmazás és a Rendelés
+használata nem függ a használati statisztikához adott
+hozzájárulástól.</p>
+<h2 id="az-ászf-elfogadása-és-módosítása">16. Az ÁSZF elfogadása és
+módosítása</h2>
+<p>16.1. Az ÁSZF a Rendelés elküldése előtt az alkalmazásban
+megismerhető, tárolható és előhívható. Az első Rendelés előtt a
+Felhasználó egy külön képernyőn (a) elfogadja az ÁSZF-et, (b) kijelenti,
+hogy elmúlt 18 éves (4.4.), (c) a kiemelten megjelenített 7.3. és 7.4.
+pontot kifejezetten elfogadja, és (d) kéri a szolgáltatás azonnali
+megkezdését a 8.3. pont szerint.</p>
+<p>16.2. A Drive &amp; Go az ÁSZF-et a következő alapos okokból
+módosíthatja: jogszabályváltozás vagy hatósági döntés; új funkció
+bevezetése vagy meglévő megszüntetése; a díjak változása; biztonsági
+vagy visszaélés-megelőzési ok. A módosítás a hatálybalépése után leadott
+Rendelésekre vonatkozik. A módosításról a Drive &amp; Go a hatálybalépés
+előtt legalább 15 nappal értesít az alkalmazásban és e-mailben; aki nem
+fogadja el, a fiókját bármikor díjmentesen törölheti, és ezzel a
+szerződést felmondja.</p>
+<h2 id="záró-rendelkezések">17. Záró rendelkezések</h2>
+<p>17.1. Az ÁSZF-re a magyar jog irányadó; ez a jogválasztás nem fosztja
+meg a Fogyasztót a szokásos tartózkodási helye szerinti jog azon
+rendelkezéseinek védelmétől, amelyektől megállapodással nem lehet
+eltérni.</p>
+<p>17.2. Ha az ÁSZF valamely rendelkezése érvénytelen, a többi érvényes
+marad.</p>
+<p>17.3. Az App Store-ból letöltött alkalmazás szoftverként való
+használatára (licencére) az Apple szabványos végfelhasználói
+licencszerződése (Licensed Application End User License Agreement) is
+vonatkozik, amelyben licencadóként az alkalmazásnak az App Store-ban
+feltüntetett szolgáltatója jár el. A Platform szolgáltatásaira, a
+Rendelésekre és minden itt szabályozott kérdésre ez az ÁSZF irányadó; ha
+a kettő eltér, ezekben a kérdésekben a Felhasználó és a Drive &amp; Go
+viszonyában az ÁSZF az irányadó.</p>
+<h2 id="mellékletek">Mellékletek</h2>
+<h3 id="melléklet-díjtábla">1. melléklet — Díjtábla</h3>
+<p>A Szolgáltatási díj sávjai a 6.3. pont táblázatában állnak.</p>
+<h3 id="melléklet-elállási-nyilatkozatminta">2. melléklet — Elállási
+nyilatkozatminta</h3>
+<p>Csak a 8.2. pont szerinti, nem romlandó Termékre.</p>
+<blockquote>
+<p>Elállási-/Felmondásinyilatkozat-minta (csak a szerződéstől való
+elállási szándék esetén töltse ki és juttassa vissza)</p>
+<p>Címzett: a Termék eladója (a Rendelésben megnevezett Partner), a
+Drive &amp; Go útján — Jonatan Korlátolt Felelősségű Társaság, 2011
+Budakalász, Tulipán utca 23., support@drivengo.hu</p>
+<p>Alulírott(ak) kijelenti(k), hogy gyakorlom/gyakoroljuk
+elállási/felmondási jogomat/jogunkat az alábbi áru(k) adásvételére vagy
+az alábbi szolgáltatás nyújtására irányuló szerződés tekintetében:</p>
+<p>Szerződéskötés időpontja/átvétel időpontja:</p>
+<p>Fogyasztó(k) neve:</p>
+<p>Fogyasztó(k) címe:</p>
+<p>A fogyasztó(k) aláírása (kizárólag papír alapon tett nyilatkozat
+esetén):</p>
+<p>Kelt</p>
+</blockquote>
+<h3 id="melléklet-békéltető-testületek">3. melléklet — Békéltető
+testületek</h3>
+<p>Az eljárásra a Fogyasztó lakóhelye vagy tartózkodási helye szerinti
+testület illetékes; a Fogyasztó kérelmére a kérelmében megjelölt
+testület jár el.</p>
+<ul>
+<li><strong>1. Budapesti Békéltető Testület</strong> (illetékes:
+Budapest) — székhely: 1016 Budapest, Krisztina krt. 99. I. em. 111. ·
+levelezési cím: 1253 Budapest, Pf. 10. · telefon: +36 1 488 2131 ·
+honlap: bekeltet.bkik.hu</li>
+<li><strong>2. Baranya Megyei Békéltető Testület</strong> (illetékes:
+Baranya, Somogy és Tolna megye) — székhely és levelezési cím: 7625 Pécs,
+Majorossy I. u. 36. · telefon: +36 72 507 154 · honlap:
+baranyabekeltetes.hu</li>
+<li><strong>3. Borsod-Abaúj-Zemplén Megyei Békéltető Testület</strong>
+(illetékes: Borsod-Abaúj-Zemplén, Heves és Nógrád megye) — székhely:
+3525 Miskolc, Szentpáli u. 1. · levelezési cím: 3501 Miskolc, Pf. 376. ·
+telefon: +36 46 501 091 (új ügyek), +36 46 501 871 (folyamatban lévő
+ügyek) · honlap: bekeltetes.borsodmegye.hu</li>
+<li><strong>4. Csongrád-Csanád Megyei Békéltető Testület</strong>
+(illetékes: Bács-Kiskun, Békés és Csongrád-Csanád megye) — székhely és
+levelezési cím: 6721 Szeged, Párizsi krt. 8–12. · telefon: +36 62 549
+392 · honlap: bekeltetes-csongrad.hu</li>
+<li><strong>5. Fejér Megyei Békéltető Testület</strong> (illetékes:
+Fejér, Komárom-Esztergom és Veszprém megye) — székhely: 8000
+Székesfehérvár, Hosszúsétatér 4–6. · levelezési cím: 8050
+Székesfehérvár, Pf. 357. · telefon: +36 22 510 310 · honlap:
+bekeltetesfejer.hu</li>
+<li><strong>6. Győr-Moson-Sopron Megyei Békéltető Testület</strong>
+(illetékes: Győr-Moson-Sopron, Vas és Zala megye) — székhely és
+levelezési cím: 9022 Győr, Szent István út 10/A · telefon: +36 96 520
+200 · honlap: bekeltetesgyor.hu</li>
+<li><strong>7. Hajdú-Bihar Megyei Békéltető Testület</strong>
+(illetékes: Hajdú-Bihar, Jász-Nagykun-Szolnok és Szabolcs-Szatmár-Bereg
+megye) — székhely és levelezési cím: 4025 Debrecen, Vörösmarty u. 13–15.
+· telefon: +36 52 500 745, +36 52 500 743 · honlap:
+hbmbekeltetes.hu</li>
+<li><strong>8. Pest Megyei Békéltető Testület</strong> (illetékes: Pest
+megye) — székhely és levelezési cím: 1055 Budapest, Balassi Bálint u.
+25. IV. em. 2. · telefon: +36 1 792 7881 · honlap:
+panaszrendezes.hu</li>
+</ul>
 </main>
 <footer>© 2026 Drive &amp; Go · <a href="mailto:support@drivengo.hu">support@drivengo.hu</a></footer>
 </body>
