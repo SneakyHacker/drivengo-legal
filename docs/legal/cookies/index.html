@@ -20,8 +20,9 @@ footer{margin-top:3rem;font-size:.85rem;opacity:.75;border-top:1px solid rgba(12
 </style>
 <script>
 /* Language detection (Hungarian pages only): a browser whose languages contain no "hu" is sent to the English page,
-   unless the visitor chose a language by hand (localStorage "dg-lang"). English pages never redirect back. */
-(function(){try{if(localStorage.getItem("dg-lang"))return;var l=navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||""];for(var i=0;i<l.length;i++){if(String(l[i]).toLowerCase().indexOf("hu")===0)return}location.replace("/legal/cookies/en/")}catch(e){}})();
+   unless the visitor chose Hungarian by hand (localStorage dg-lang=hu); a hand-chosen English (dg-lang=en) always sends
+   to the English page. English pages never redirect back. */
+(function(){try{var c=localStorage.getItem("dg-lang");if(c==="hu")return;if(c!=="en"){var l=navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||""];for(var i=0;i<l.length;i++){if(String(l[i]).toLowerCase().indexOf("hu")===0)return}}location.replace("/legal/cookies/en/")}catch(e){}})();
 </script>
 </head>
 <body>
