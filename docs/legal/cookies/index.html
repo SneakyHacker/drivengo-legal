@@ -18,9 +18,14 @@ th,td{border:1px solid rgba(128,128,128,.4);padding:.4rem .5rem;vertical-align:t
 blockquote{margin:1rem 0;padding:.2rem 1rem;border-left:3px solid rgba(128,128,128,.4)}
 footer{margin-top:3rem;font-size:.85rem;opacity:.75;border-top:1px solid rgba(128,128,128,.35);padding-top:.6rem}
 </style>
+<script>
+/* Language detection (Hungarian pages only): a browser whose languages contain no "hu" is sent to the English page,
+   unless the visitor chose a language by hand (localStorage "dg-lang"). English pages never redirect back. */
+(function(){try{if(localStorage.getItem("dg-lang"))return;var l=navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||""];for(var i=0;i<l.length;i++){if(String(l[i]).toLowerCase().indexOf("hu")===0)return}location.replace("/legal/cookies/en/")}catch(e){}})();
+</script>
 </head>
 <body>
-<header><a href="/">Drive &amp; Go</a><nav><a href="/legal/terms/">ÁSZF</a><a href="/legal/privacy/">Adatkezelés</a><a href="/support/">Ügyfélszolgálat</a><a class="lang" href="/legal/cookies/en/" lang="en">English</a></nav></header>
+<header><a href="/">Drive &amp; Go</a><nav><a href="/legal/terms/">ÁSZF</a><a href="/legal/privacy/">Adatkezelés</a><a href="/support/">Ügyfélszolgálat</a><a class="lang" href="/legal/cookies/en/" lang="en" onclick="try{localStorage.setItem(&quot;dg-lang&quot;,&quot;en&quot;)}catch(e){}">English</a></nav></header>
 <main>
 <h1 id="drive-go-süti-tájékoztató">Drive &amp; Go — Süti
 tájékoztató</h1>

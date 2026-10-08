@@ -18,9 +18,14 @@ th,td{border:1px solid rgba(128,128,128,.4);padding:.4rem .5rem;vertical-align:t
 blockquote{margin:1rem 0;padding:.2rem 1rem;border-left:3px solid rgba(128,128,128,.4)}
 footer{margin-top:3rem;font-size:.85rem;opacity:.75;border-top:1px solid rgba(128,128,128,.35);padding-top:.6rem}
 </style>
+$if(alt_href)$$if(en)$$else$<script>
+/* Language detection (Hungarian pages only): a browser whose languages contain no "hu" is sent to the English page,
+   unless the visitor chose a language by hand (localStorage "dg-lang"). English pages never redirect back. */
+(function(){try{if(localStorage.getItem("dg-lang"))return;var l=navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||""];for(var i=0;i<l.length;i++){if(String(l[i]).toLowerCase().indexOf("hu")===0)return}location.replace("$alt_href$")}catch(e){}})();
+</script>$endif$$endif$
 </head>
 <body>
-<header><a href="$base$/">Drive &amp; Go</a><nav>$if(en)$<a href="$base$/legal/terms/en/">Terms</a><a href="$base$/legal/privacy/en/">Privacy</a><a href="$base$/support/en/">Support</a>$else$<a href="$base$/legal/terms/">ÁSZF</a><a href="$base$/legal/privacy/">Adatkezelés</a><a href="$base$/support/">Ügyfélszolgálat</a>$endif$$if(alt_href)$<a class="lang" href="$alt_href$" lang="$if(en)$hu$else$en$endif$">$alt_label$</a>$endif$</nav></header>
+<header><a href="$base$/">Drive &amp; Go</a><nav>$if(en)$<a href="$base$/legal/terms/en/">Terms</a><a href="$base$/legal/privacy/en/">Privacy</a><a href="$base$/support/en/">Support</a>$else$<a href="$base$/legal/terms/">ÁSZF</a><a href="$base$/legal/privacy/">Adatkezelés</a><a href="$base$/support/">Ügyfélszolgálat</a>$endif$$if(alt_href)$<a class="lang" href="$alt_href$" lang="$if(en)$hu$else$en$endif$" onclick="try{localStorage.setItem(&quot;dg-lang&quot;,&quot;$if(en)$hu$else$en$endif$&quot;)}catch(e){}">$alt_label$</a>$endif$</nav></header>
 <main>
 $body$
 </main>

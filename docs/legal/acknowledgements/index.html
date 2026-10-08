@@ -18,15 +18,1859 @@ th,td{border:1px solid rgba(128,128,128,.4);padding:.4rem .5rem;vertical-align:t
 blockquote{margin:1rem 0;padding:.2rem 1rem;border-left:3px solid rgba(128,128,128,.4)}
 footer{margin-top:3rem;font-size:.85rem;opacity:.75;border-top:1px solid rgba(128,128,128,.35);padding-top:.6rem}
 </style>
+<script>
+/* Language detection (Hungarian pages only): a browser whose languages contain no "hu" is sent to the English page,
+   unless the visitor chose a language by hand (localStorage "dg-lang"). English pages never redirect back. */
+(function(){try{if(localStorage.getItem("dg-lang"))return;var l=navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||""];for(var i=0;i<l.length;i++){if(String(l[i]).toLowerCase().indexOf("hu")===0)return}location.replace("/legal/acknowledgements/en/")}catch(e){}})();
+</script>
 </head>
 <body>
-<header><a href="/">Drive &amp; Go</a><nav><a href="/legal/terms/">ÁSZF</a><a href="/legal/privacy/">Adatkezelés</a><a href="/support/">Ügyfélszolgálat</a></nav></header>
+<header><a href="/">Drive &amp; Go</a><nav><a href="/legal/terms/">ÁSZF</a><a href="/legal/privacy/">Adatkezelés</a><a href="/support/">Ügyfélszolgálat</a><a class="lang" href="/legal/acknowledgements/en/" lang="en" onclick="try{localStorage.setItem(&quot;dg-lang&quot;,&quot;en&quot;)}catch(e){}">English</a></nav></header>
 <main>
-<h1 id="nyílt-forráskódú-összetevők">Nyílt forráskódú összetevők</h1>
-<p>A Drive &amp; Go alkalmazás nyílt forráskódú összetevőket használ. A
-teljes lista és a licencek <strong>2026. október 5-től</strong> itt
-olvashatók.</p>
+<h1 id="drive-go-nyílt-forráskódú-összetevők">Drive &amp; Go — Nyílt
+forráskódú összetevők</h1>
+<p>A Drive &amp; Go iOS-alkalmazás az alábbi nyílt forráskódú
+szoftvercsomagokat tartalmazza, illetve épít rájuk. Köszönjük a
+szerzőknek és közreműködőknek. A lista az alkalmazás éles (production)
+függőségi fájának teljes lezárása: 724 csomag, 17 licenctípus, generálva
+2026-10-09-én a forráskódból (<code>apps/mobile</code>). Minden csomag a
+saját licencével együtt szerepel; a licencek teljes szövege az adott
+csomag forrásában olvasható.</p>
 <p>Térképadatok: © Mapbox, © OpenStreetMap közreműködők.</p>
+<h2 id="licencek">Licencek</h2>
+<ul>
+<li>MIT — 629 csomag</li>
+<li>ISC — 31 csomag</li>
+<li>Apache-2.0 — 15 csomag</li>
+<li>BSD-2-Clause — 12 csomag</li>
+<li>BSD-3-Clause — 10 csomag</li>
+<li>BlueOak-1.0.0 — 6 csomag</li>
+<li>MIT AND OFL-1.1 — 4 csomag</li>
+<li>MPL-2.0 — 3 csomag</li>
+<li>(MIT OR CC0-1.0) — 2 csomag</li>
+<li>0BSD — 2 csomag</li>
+<li>CC-BY-4.0 — 2 csomag</li>
+<li>FSL-1.1-MIT — 2 csomag</li>
+<li>Unlicense — 2 csomag</li>
+<li>(BSD-3-Clause OR GPL-2.0) — 1 csomag</li>
+<li>(MIT OR Apache-2.0) — 1 csomag</li>
+<li>CC0-1.0 — 1 csomag</li>
+<li>Python-2.0 — 1 csomag</li>
+</ul>
+<h2 id="mit-629-csomag">MIT (629 csomag)</h2>
+<ul>
+<li><span class="citation"
+data-cites="adobe/css-tools">@adobe/css-tools</span> 4.5.0 — <a
+href="https://github.com/adobe/css-tools">forrás</a></li>
+<li><span class="citation"
+data-cites="alloc/quick-lru">@alloc/quick-lru</span> 5.2.0 — <a
+href="https://github.com/sindresorhus/quick-lru">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/code-frame">@babel/code-frame</span> 7.29.0 — <a
+href="https://babel.dev/docs/en/next/babel-code-frame">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/code-frame">@babel/code-frame</span> 7.29.7 — <a
+href="https://babel.dev/docs/en/next/babel-code-frame">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/compat-data">@babel/compat-data</span> 7.29.0 — <a
+href="https://github.com/babel/babel">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/compat-data">@babel/compat-data</span> 7.29.7 — <a
+href="https://github.com/babel/babel">forrás</a></li>
+<li><span class="citation" data-cites="babel/core">@babel/core</span>
+7.29.0 — <a
+href="https://babel.dev/docs/en/next/babel-core">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/generator">@babel/generator</span> 7.29.1 — <a
+href="https://babel.dev/docs/en/next/babel-generator">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/generator">@babel/generator</span> 7.29.7 — <a
+href="https://babel.dev/docs/en/next/babel-generator">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/helper-annotate-as-pure">@babel/helper-annotate-as-pure</span>
+7.27.3 — <a
+href="https://babel.dev/docs/en/next/babel-helper-annotate-as-pure">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/helper-annotate-as-pure">@babel/helper-annotate-as-pure</span>
+7.29.7 — <a
+href="https://babel.dev/docs/en/next/babel-helper-annotate-as-pure">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/helper-compilation-targets">@babel/helper-compilation-targets</span>
+7.28.6 — <a href="https://github.com/babel/babel">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/helper-compilation-targets">@babel/helper-compilation-targets</span>
+7.29.7 — <a href="https://github.com/babel/babel">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/helper-create-class-features-plugin">@babel/helper-create-class-features-plugin</span>
+7.28.6 — <a href="https://github.com/babel/babel">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/helper-create-class-features-plugin">@babel/helper-create-class-features-plugin</span>
+7.29.7 — <a href="https://github.com/babel/babel">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/helper-create-regexp-features-plugin">@babel/helper-create-regexp-features-plugin</span>
+7.28.5 — <a href="https://github.com/babel/babel">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/helper-create-regexp-features-plugin">@babel/helper-create-regexp-features-plugin</span>
+7.29.7 — <a href="https://github.com/babel/babel">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/helper-define-polyfill-provider">@babel/helper-define-polyfill-provider</span>
+0.6.6 — <a
+href="https://github.com/babel/babel-polyfills">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/helper-define-polyfill-provider">@babel/helper-define-polyfill-provider</span>
+0.6.8 — <a
+href="https://github.com/babel/babel-polyfills">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/helper-globals">@babel/helper-globals</span> 7.28.0 —
+<a href="https://github.com/babel/babel">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/helper-globals">@babel/helper-globals</span> 7.29.7 —
+<a href="https://github.com/babel/babel">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/helper-member-expression-to-functions">@babel/helper-member-expression-to-functions</span>
+7.28.5 — <a
+href="https://babel.dev/docs/en/next/babel-helper-member-expression-to-functions">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/helper-member-expression-to-functions">@babel/helper-member-expression-to-functions</span>
+7.29.7 — <a
+href="https://babel.dev/docs/en/next/babel-helper-member-expression-to-functions">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/helper-module-imports">@babel/helper-module-imports</span>
+7.28.6 — <a
+href="https://babel.dev/docs/en/next/babel-helper-module-imports">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/helper-module-imports">@babel/helper-module-imports</span>
+7.29.7 — <a
+href="https://babel.dev/docs/en/next/babel-helper-module-imports">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/helper-module-transforms">@babel/helper-module-transforms</span>
+7.28.6 — <a
+href="https://babel.dev/docs/en/next/babel-helper-module-transforms">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/helper-module-transforms">@babel/helper-module-transforms</span>
+7.29.7 — <a
+href="https://babel.dev/docs/en/next/babel-helper-module-transforms">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/helper-optimise-call-expression">@babel/helper-optimise-call-expression</span>
+7.27.1 — <a
+href="https://babel.dev/docs/en/next/babel-helper-optimise-call-expression">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/helper-optimise-call-expression">@babel/helper-optimise-call-expression</span>
+7.29.7 — <a
+href="https://babel.dev/docs/en/next/babel-helper-optimise-call-expression">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/helper-plugin-utils">@babel/helper-plugin-utils</span>
+7.28.6 — <a
+href="https://babel.dev/docs/en/next/babel-helper-plugin-utils">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/helper-plugin-utils">@babel/helper-plugin-utils</span>
+7.29.7 — <a
+href="https://babel.dev/docs/en/next/babel-helper-plugin-utils">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/helper-remap-async-to-generator">@babel/helper-remap-async-to-generator</span>
+7.29.7 — <a
+href="https://babel.dev/docs/en/next/babel-helper-remap-async-to-generator">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/helper-replace-supers">@babel/helper-replace-supers</span>
+7.28.6 — <a
+href="https://babel.dev/docs/en/next/babel-helper-replace-supers">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/helper-replace-supers">@babel/helper-replace-supers</span>
+7.29.7 — <a
+href="https://babel.dev/docs/en/next/babel-helper-replace-supers">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/helper-skip-transparent-expression-wrappers">@babel/helper-skip-transparent-expression-wrappers</span>
+7.27.1 — <a href="https://github.com/babel/babel">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/helper-skip-transparent-expression-wrappers">@babel/helper-skip-transparent-expression-wrappers</span>
+7.29.7 — <a href="https://github.com/babel/babel">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/helper-string-parser">@babel/helper-string-parser</span>
+7.27.1 — <a
+href="https://babel.dev/docs/en/next/babel-helper-string-parser">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/helper-string-parser">@babel/helper-string-parser</span>
+7.29.7 — <a
+href="https://babel.dev/docs/en/next/babel-helper-string-parser">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/helper-validator-identifier">@babel/helper-validator-identifier</span>
+7.28.5 — <a href="https://github.com/babel/babel">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/helper-validator-identifier">@babel/helper-validator-identifier</span>
+7.29.7 — <a href="https://github.com/babel/babel">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/helper-validator-option">@babel/helper-validator-option</span>
+7.27.1 — <a href="https://github.com/babel/babel">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/helper-validator-option">@babel/helper-validator-option</span>
+7.29.7 — <a href="https://github.com/babel/babel">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/helper-wrap-function">@babel/helper-wrap-function</span>
+7.29.7 — <a
+href="https://babel.dev/docs/en/next/babel-helper-wrap-function">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/helpers">@babel/helpers</span> 7.28.6 — <a
+href="https://babel.dev/docs/en/next/babel-helpers">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/parser">@babel/parser</span> 7.29.0 — <a
+href="https://babel.dev/docs/en/next/babel-parser">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/parser">@babel/parser</span> 7.29.7 — <a
+href="https://babel.dev/docs/en/next/babel-parser">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/plugin-proposal-decorators">@babel/plugin-proposal-decorators</span>
+7.29.0 — <a
+href="https://babel.dev/docs/en/next/babel-plugin-proposal-decorators">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/plugin-proposal-export-default-from">@babel/plugin-proposal-export-default-from</span>
+7.29.7 — <a
+href="https://babel.dev/docs/en/next/babel-plugin-proposal-export-default-from">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/plugin-syntax-decorators">@babel/plugin-syntax-decorators</span>
+7.28.6 — <a
+href="https://babel.dev/docs/en/next/babel-plugin-syntax-decorators">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/plugin-syntax-dynamic-import">@babel/plugin-syntax-dynamic-import</span>
+7.8.3 — <a
+href="https://github.com/babel/babel/tree/master/packages/babel-plugin-syntax-dynamic-import">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/plugin-syntax-export-default-from">@babel/plugin-syntax-export-default-from</span>
+7.29.7 — <a
+href="https://babel.dev/docs/en/next/babel-plugin-syntax-export-default-from">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/plugin-syntax-flow">@babel/plugin-syntax-flow</span>
+7.28.6 — <a
+href="https://babel.dev/docs/en/next/babel-plugin-syntax-flow">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/plugin-syntax-flow">@babel/plugin-syntax-flow</span>
+7.29.7 — <a
+href="https://babel.dev/docs/en/next/babel-plugin-syntax-flow">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/plugin-syntax-jsx">@babel/plugin-syntax-jsx</span>
+7.28.6 — <a
+href="https://babel.dev/docs/en/next/babel-plugin-syntax-jsx">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/plugin-syntax-jsx">@babel/plugin-syntax-jsx</span>
+7.29.7 — <a
+href="https://babel.dev/docs/en/next/babel-plugin-syntax-jsx">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/plugin-syntax-nullish-coalescing-operator">@babel/plugin-syntax-nullish-coalescing-operator</span>
+7.8.3 — <a
+href="https://github.com/babel/babel/tree/master/packages/babel-plugin-syntax-nullish-coalescing-operator">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/plugin-syntax-optional-chaining">@babel/plugin-syntax-optional-chaining</span>
+7.8.3 — <a
+href="https://github.com/babel/babel/tree/master/packages/babel-plugin-syntax-optional-chaining">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/plugin-syntax-typescript">@babel/plugin-syntax-typescript</span>
+7.28.6 — <a
+href="https://babel.dev/docs/en/next/babel-plugin-syntax-typescript">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/plugin-syntax-typescript">@babel/plugin-syntax-typescript</span>
+7.29.7 — <a
+href="https://babel.dev/docs/en/next/babel-plugin-syntax-typescript">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/plugin-transform-arrow-functions">@babel/plugin-transform-arrow-functions</span>
+7.27.1 — <a
+href="https://babel.dev/docs/en/next/babel-plugin-transform-arrow-functions">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/plugin-transform-async-generator-functions">@babel/plugin-transform-async-generator-functions</span>
+7.29.7 — <a
+href="https://babel.dev/docs/en/next/babel-plugin-transform-async-generator-functions">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/plugin-transform-async-to-generator">@babel/plugin-transform-async-to-generator</span>
+7.29.7 — <a
+href="https://babel.dev/docs/en/next/babel-plugin-transform-async-to-generator">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/plugin-transform-block-scoping">@babel/plugin-transform-block-scoping</span>
+7.29.7 — <a
+href="https://babel.dev/docs/en/next/babel-plugin-transform-block-scoping">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/plugin-transform-class-properties">@babel/plugin-transform-class-properties</span>
+7.28.6 — <a
+href="https://babel.dev/docs/en/next/babel-plugin-transform-class-properties">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/plugin-transform-class-properties">@babel/plugin-transform-class-properties</span>
+7.29.7 — <a
+href="https://babel.dev/docs/en/next/babel-plugin-transform-class-properties">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/plugin-transform-class-static-block">@babel/plugin-transform-class-static-block</span>
+7.28.6 — <a
+href="https://babel.dev/docs/en/next/babel-plugin-transform-class-static-block">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/plugin-transform-classes">@babel/plugin-transform-classes</span>
+7.28.6 — <a
+href="https://babel.dev/docs/en/next/babel-plugin-transform-classes">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/plugin-transform-classes">@babel/plugin-transform-classes</span>
+7.29.7 — <a
+href="https://babel.dev/docs/en/next/babel-plugin-transform-classes">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/plugin-transform-destructuring">@babel/plugin-transform-destructuring</span>
+7.28.5 — <a
+href="https://babel.dev/docs/en/next/babel-plugin-transform-destructuring">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/plugin-transform-destructuring">@babel/plugin-transform-destructuring</span>
+7.29.7 — <a
+href="https://babel.dev/docs/en/next/babel-plugin-transform-destructuring">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/plugin-transform-export-namespace-from">@babel/plugin-transform-export-namespace-from</span>
+7.27.1 — <a
+href="https://babel.dev/docs/en/next/babel-plugin-transform-export-namespace-from">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/plugin-transform-flow-strip-types">@babel/plugin-transform-flow-strip-types</span>
+7.29.7 — <a
+href="https://babel.dev/docs/en/next/babel-plugin-transform-flow-strip-types">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/plugin-transform-for-of">@babel/plugin-transform-for-of</span>
+7.29.7 — <a
+href="https://babel.dev/docs/en/next/babel-plugin-transform-for-of">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/plugin-transform-logical-assignment-operators">@babel/plugin-transform-logical-assignment-operators</span>
+7.28.6 — <a
+href="https://babel.dev/docs/en/next/babel-plugin-transform-logical-assignment-operators">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/plugin-transform-modules-commonjs">@babel/plugin-transform-modules-commonjs</span>
+7.28.6 — <a
+href="https://babel.dev/docs/en/next/babel-plugin-transform-modules-commonjs">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/plugin-transform-modules-commonjs">@babel/plugin-transform-modules-commonjs</span>
+7.29.7 — <a
+href="https://babel.dev/docs/en/next/babel-plugin-transform-modules-commonjs">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/plugin-transform-named-capturing-groups-regex">@babel/plugin-transform-named-capturing-groups-regex</span>
+7.29.7 — <a
+href="https://babel.dev/docs/en/next/babel-plugin-transform-named-capturing-groups-regex">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/plugin-transform-nullish-coalescing-operator">@babel/plugin-transform-nullish-coalescing-operator</span>
+7.28.6 — <a
+href="https://babel.dev/docs/en/next/babel-plugin-transform-nullish-coalescing-operator">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/plugin-transform-nullish-coalescing-operator">@babel/plugin-transform-nullish-coalescing-operator</span>
+7.29.7 — <a
+href="https://babel.dev/docs/en/next/babel-plugin-transform-nullish-coalescing-operator">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/plugin-transform-object-rest-spread">@babel/plugin-transform-object-rest-spread</span>
+7.28.6 — <a
+href="https://babel.dev/docs/en/next/babel-plugin-transform-object-rest-spread">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/plugin-transform-optional-catch-binding">@babel/plugin-transform-optional-catch-binding</span>
+7.29.7 — <a
+href="https://babel.dev/docs/en/next/babel-plugin-transform-optional-catch-binding">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/plugin-transform-optional-chaining">@babel/plugin-transform-optional-chaining</span>
+7.28.6 — <a
+href="https://babel.dev/docs/en/next/babel-plugin-transform-optional-chaining">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/plugin-transform-optional-chaining">@babel/plugin-transform-optional-chaining</span>
+7.29.7 — <a
+href="https://babel.dev/docs/en/next/babel-plugin-transform-optional-chaining">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/plugin-transform-parameters">@babel/plugin-transform-parameters</span>
+7.27.7 — <a
+href="https://babel.dev/docs/en/next/babel-plugin-transform-parameters">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/plugin-transform-private-methods">@babel/plugin-transform-private-methods</span>
+7.29.7 — <a
+href="https://babel.dev/docs/en/next/babel-plugin-transform-private-methods">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/plugin-transform-private-property-in-object">@babel/plugin-transform-private-property-in-object</span>
+7.29.7 — <a
+href="https://babel.dev/docs/en/next/babel-plugin-transform-private-property-in-object">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/plugin-transform-react-display-name">@babel/plugin-transform-react-display-name</span>
+7.29.7 — <a
+href="https://babel.dev/docs/en/next/babel-plugin-transform-react-display-name">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/plugin-transform-react-jsx">@babel/plugin-transform-react-jsx</span>
+7.29.7 — <a
+href="https://babel.dev/docs/en/next/babel-plugin-transform-react-jsx">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/plugin-transform-react-jsx-development">@babel/plugin-transform-react-jsx-development</span>
+7.27.1 — <a href="https://github.com/babel/babel">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/plugin-transform-react-pure-annotations">@babel/plugin-transform-react-pure-annotations</span>
+7.27.1 — <a href="https://github.com/babel/babel">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/plugin-transform-runtime">@babel/plugin-transform-runtime</span>
+7.29.7 — <a
+href="https://babel.dev/docs/en/next/babel-plugin-transform-runtime">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/plugin-transform-shorthand-properties">@babel/plugin-transform-shorthand-properties</span>
+7.27.1 — <a
+href="https://babel.dev/docs/en/next/babel-plugin-transform-shorthand-properties">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/plugin-transform-template-literals">@babel/plugin-transform-template-literals</span>
+7.27.1 — <a
+href="https://babel.dev/docs/en/next/babel-plugin-transform-template-literals">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/plugin-transform-typescript">@babel/plugin-transform-typescript</span>
+7.28.6 — <a
+href="https://babel.dev/docs/en/next/babel-plugin-transform-typescript">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/plugin-transform-typescript">@babel/plugin-transform-typescript</span>
+7.29.7 — <a
+href="https://babel.dev/docs/en/next/babel-plugin-transform-typescript">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/plugin-transform-unicode-regex">@babel/plugin-transform-unicode-regex</span>
+7.27.1 — <a
+href="https://babel.dev/docs/en/next/babel-plugin-transform-unicode-regex">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/plugin-transform-unicode-regex">@babel/plugin-transform-unicode-regex</span>
+7.29.7 — <a
+href="https://babel.dev/docs/en/next/babel-plugin-transform-unicode-regex">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/preset-typescript">@babel/preset-typescript</span>
+7.28.5 — <a
+href="https://babel.dev/docs/en/next/babel-preset-typescript">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/runtime">@babel/runtime</span> 7.29.7 — <a
+href="https://babel.dev/docs/en/next/babel-runtime">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/template">@babel/template</span> 7.28.6 — <a
+href="https://babel.dev/docs/en/next/babel-template">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/template">@babel/template</span> 7.29.7 — <a
+href="https://babel.dev/docs/en/next/babel-template">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/traverse">@babel/traverse</span> 7.29.0 — <a
+href="https://babel.dev/docs/en/next/babel-traverse">forrás</a></li>
+<li><span class="citation"
+data-cites="babel/traverse">@babel/traverse</span> 7.29.7 — <a
+href="https://babel.dev/docs/en/next/babel-traverse">forrás</a></li>
+<li><span class="citation" data-cites="babel/types">@babel/types</span>
+7.29.0 — <a
+href="https://babel.dev/docs/en/next/babel-types">forrás</a></li>
+<li><span class="citation" data-cites="babel/types">@babel/types</span>
+7.29.7 — <a
+href="https://babel.dev/docs/en/next/babel-types">forrás</a></li>
+<li><span class="citation"
+data-cites="egjs/hammerjs">@egjs/hammerjs</span> 2.0.17 — <a
+href="http://naver.github.io/egjs">forrás</a></li>
+<li><span class="citation" data-cites="expo/cli">@expo/cli</span>
+56.1.21 — <a
+href="https://github.com/expo/expo/tree/main/packages/@expo/cli">forrás</a></li>
+<li><span class="citation"
+data-cites="expo/code-signing-certificates">@expo/code-signing-certificates</span>
+0.0.6 — <a
+href="https://github.com/expo/code-signing-certificates/tree/main#readme">forrás</a></li>
+<li><span class="citation" data-cites="expo/config">@expo/config</span>
+56.0.13 — <a
+href="https://github.com/expo/expo/tree/main/packages/@expo/config#readme">forrás</a></li>
+<li><span class="citation"
+data-cites="expo/config-plugins">@expo/config-plugins</span> 56.0.14 —
+<a href="https://docs.expo.dev/guides/config-plugins/">forrás</a></li>
+<li><span class="citation"
+data-cites="expo/config-types">@expo/config-types</span> 56.0.7 — <a
+href="https://github.com/expo/expo/tree/main/packages/@expo/config-types#readme">forrás</a></li>
+<li><span class="citation"
+data-cites="expo/devcert">@expo/devcert</span> 1.2.1 — <a
+href="https://github.com/expo/devcert#readme">forrás</a></li>
+<li><span class="citation"
+data-cites="expo/devtools">@expo/devtools</span> 56.0.2 — <a
+href="https://github.com/expo/expo/tree/main/packages/@expo/devtools#readme">forrás</a></li>
+<li><span class="citation"
+data-cites="expo/dom-webview">@expo/dom-webview</span> 56.0.6 — <a
+href="https://github.com/expo/expo/tree/main/packages/@expo/dom-webview">forrás</a></li>
+<li><span class="citation" data-cites="expo/env">@expo/env</span> 2.3.1
+— <a
+href="https://github.com/expo/expo/tree/main/packages/@expo/env#readme">forrás</a></li>
+<li><span class="citation" data-cites="expo/env">@expo/env</span> 2.4.1
+— <a
+href="https://github.com/expo/expo/tree/main/packages/@expo/env#readme">forrás</a></li>
+<li><span class="citation"
+data-cites="expo/expo-modules-macros-plugin">@expo/expo-modules-macros-plugin</span>
+0.2.2 — <a
+href="https://github.com/expo/expo-modules-macros-plugin">forrás</a></li>
+<li><span class="citation"
+data-cites="expo/fingerprint">@expo/fingerprint</span> 0.19.9 — <a
+href="https://github.com/expo/expo/tree/main/packages/@expo/fingerprint#readme">forrás</a></li>
+<li><span class="citation"
+data-cites="expo/image-utils">@expo/image-utils</span> 0.10.4 — <a
+href="https://github.com/expo/expo/tree/main/packages/%40expo/image-utils#readme">forrás</a></li>
+<li><span class="citation"
+data-cites="expo/inline-modules">@expo/inline-modules</span> 0.0.14 — <a
+href="https://github.com/expo/expo">forrás</a></li>
+<li><span class="citation"
+data-cites="expo/json-file">@expo/json-file</span> 10.2.0 — <a
+href="https://github.com/expo/expo/tree/main/packages/@expo/json-file#readme">forrás</a></li>
+<li><span class="citation"
+data-cites="expo/local-build-cache-provider">@expo/local-build-cache-provider</span>
+56.0.10 — <a
+href="https://github.com/expo/expo/tree/main/packages/@expo/local-build-cache-provider#readme">forrás</a></li>
+<li><span class="citation"
+data-cites="expo/log-box">@expo/log-box</span> 56.0.14 — <a
+href="https://github.com/expo/expo/tree/main/packages/@expo/log-box">forrás</a></li>
+<li><span class="citation" data-cites="expo/metro">@expo/metro</span>
+56.0.0 — <a href="https://github.com/expo/expo-metro">forrás</a></li>
+<li><span class="citation"
+data-cites="expo/metro-config">@expo/metro-config</span> 56.0.18 — <a
+href="https://github.com/expo/expo/tree/main/packages/@expo/metro-config#readme">forrás</a></li>
+<li><span class="citation"
+data-cites="expo/metro-file-map">@expo/metro-file-map</span> 56.0.3 — <a
+href="https://github.com/expo/expo/tree/main/packages/@expo/metro-file-map#readme">forrás</a></li>
+<li><span class="citation"
+data-cites="expo/metro-runtime">@expo/metro-runtime</span> 56.0.18 — <a
+href="https://github.com/expo/expo/tree/main/packages/@expo/metro-runtime">forrás</a></li>
+<li><span class="citation"
+data-cites="expo/osascript">@expo/osascript</span> 2.6.0 — <a
+href="https://github.com/expo/expo/tree/main/packages/@expo/osascript#readme">forrás</a></li>
+<li><span class="citation"
+data-cites="expo/package-manager">@expo/package-manager</span> 1.12.1 —
+<a
+href="https://github.com/expo/expo/tree/main/packages/@expo/package-manager#readme">forrás</a></li>
+<li><span class="citation" data-cites="expo/plist">@expo/plist</span>
+0.7.0 — <a
+href="https://github.com/expo/expo/tree/main/packages/@expo/plist#readme">forrás</a></li>
+<li><span class="citation"
+data-cites="expo/prebuild-config">@expo/prebuild-config</span> 56.0.21 —
+<a
+href="https://github.com/expo/expo/tree/main/packages/@expo/prebuild-config#readme">forrás</a></li>
+<li><span class="citation"
+data-cites="expo/require-utils">@expo/require-utils</span> 56.1.6 — <a
+href="https://github.com/expo/expo/tree/main/packages/@expo/require-utils#readme">forrás</a></li>
+<li><span class="citation"
+data-cites="expo/router-server">@expo/router-server</span> 56.0.17 — <a
+href="https://docs.expo.dev/routing/introduction/">forrás</a></li>
+<li><span class="citation"
+data-cites="expo/schema-utils">@expo/schema-utils</span> 56.0.2 — <a
+href="https://github.com/expo/expo/tree/main/packages/@expo/schema-utils#readme">forrás</a></li>
+<li><span class="citation"
+data-cites="expo/sdk-runtime-versions">@expo/sdk-runtime-versions</span>
+1.0.0</li>
+<li><span class="citation"
+data-cites="expo/spawn-async">@expo/spawn-async</span> 1.8.0 — <a
+href="https://github.com/expo/spawn-async#readme">forrás</a></li>
+<li><span class="citation"
+data-cites="expo/sudo-prompt">@expo/sudo-prompt</span> 9.3.2 — <a
+href="https://github.com/expo/sudo-prompt">forrás</a></li>
+<li><span class="citation" data-cites="expo/ui">@expo/ui</span> 56.0.23
+— <a
+href="https://docs.expo.dev/versions/latest/sdk/ui/">forrás</a></li>
+<li><span class="citation"
+data-cites="expo/ws-tunnel">@expo/ws-tunnel</span> 2.0.0</li>
+<li><span class="citation"
+data-cites="jest/schemas">@jest/schemas</span> 29.6.3 — <a
+href="https://github.com/jestjs/jest">forrás</a></li>
+<li><span class="citation" data-cites="jest/types">@jest/types</span>
+29.6.3 — <a href="https://github.com/jestjs/jest">forrás</a></li>
+<li><span class="citation"
+data-cites="jridgewell/gen-mapping">@jridgewell/gen-mapping</span>
+0.3.13 — <a
+href="https://github.com/jridgewell/sourcemaps/tree/main/packages/gen-mapping">forrás</a></li>
+<li><span class="citation"
+data-cites="jridgewell/remapping">@jridgewell/remapping</span> 2.3.5 —
+<a
+href="https://github.com/jridgewell/sourcemaps/tree/main/packages/remapping">forrás</a></li>
+<li><span class="citation"
+data-cites="jridgewell/resolve-uri">@jridgewell/resolve-uri</span> 3.1.2
+— <a href="https://github.com/jridgewell/resolve-uri">forrás</a></li>
+<li><span class="citation"
+data-cites="jridgewell/source-map">@jridgewell/source-map</span> 0.3.11
+— <a
+href="https://github.com/jridgewell/sourcemaps/tree/main/packages/source-map">forrás</a></li>
+<li><span class="citation"
+data-cites="jridgewell/sourcemap-codec">@jridgewell/sourcemap-codec</span>
+1.5.5 — <a
+href="https://github.com/jridgewell/sourcemaps/tree/main/packages/sourcemap-codec">forrás</a></li>
+<li><span class="citation"
+data-cites="jridgewell/trace-mapping">@jridgewell/trace-mapping</span>
+0.3.31 — <a
+href="https://github.com/jridgewell/sourcemaps/tree/main/packages/trace-mapping">forrás</a></li>
+<li><span class="citation"
+data-cites="nodelib/fs.scandir">@nodelib/fs.scandir</span> 2.1.5 — <a
+href="https://github.com/nodelib/nodelib/tree/master/packages/fs/fs.scandir">forrás</a></li>
+<li><span class="citation"
+data-cites="nodelib/fs.stat">@nodelib/fs.stat</span> 2.0.5 — <a
+href="https://github.com/nodelib/nodelib/tree/master/packages/fs/fs.stat">forrás</a></li>
+<li><span class="citation"
+data-cites="nodelib/fs.walk">@nodelib/fs.walk</span> 1.2.8 — <a
+href="https://github.com/nodelib/nodelib/tree/master/packages/fs/fs.walk">forrás</a></li>
+<li><span class="citation"
+data-cites="radix-ui/primitive">@radix-ui/primitive</span> 1.1.4 — <a
+href="https://radix-ui.com/primitives">forrás</a></li>
+<li><span class="citation"
+data-cites="radix-ui/react-collection">@radix-ui/react-collection</span>
+1.1.9 — <a href="https://radix-ui.com/primitives">forrás</a></li>
+<li><span class="citation"
+data-cites="radix-ui/react-compose-refs">@radix-ui/react-compose-refs</span>
+1.1.3 — <a href="https://radix-ui.com/primitives">forrás</a></li>
+<li><span class="citation"
+data-cites="radix-ui/react-context">@radix-ui/react-context</span> 1.1.4
+— <a href="https://radix-ui.com/primitives">forrás</a></li>
+<li><span class="citation"
+data-cites="radix-ui/react-dialog">@radix-ui/react-dialog</span> 1.1.16
+— <a href="https://radix-ui.com/primitives">forrás</a></li>
+<li><span class="citation"
+data-cites="radix-ui/react-direction">@radix-ui/react-direction</span>
+1.1.2 — <a href="https://radix-ui.com/primitives">forrás</a></li>
+<li><span class="citation"
+data-cites="radix-ui/react-dismissable-layer">@radix-ui/react-dismissable-layer</span>
+1.1.12 — <a href="https://radix-ui.com/primitives">forrás</a></li>
+<li><span class="citation"
+data-cites="radix-ui/react-focus-guards">@radix-ui/react-focus-guards</span>
+1.1.4 — <a href="https://radix-ui.com/primitives">forrás</a></li>
+<li><span class="citation"
+data-cites="radix-ui/react-focus-scope">@radix-ui/react-focus-scope</span>
+1.1.9 — <a href="https://radix-ui.com/primitives">forrás</a></li>
+<li><span class="citation"
+data-cites="radix-ui/react-id">@radix-ui/react-id</span> 1.1.2 — <a
+href="https://radix-ui.com/primitives">forrás</a></li>
+<li><span class="citation"
+data-cites="radix-ui/react-portal">@radix-ui/react-portal</span> 1.1.11
+— <a href="https://radix-ui.com/primitives">forrás</a></li>
+<li><span class="citation"
+data-cites="radix-ui/react-presence">@radix-ui/react-presence</span>
+1.1.6 — <a href="https://radix-ui.com/primitives">forrás</a></li>
+<li><span class="citation"
+data-cites="radix-ui/react-primitive">@radix-ui/react-primitive</span>
+2.1.5 — <a href="https://radix-ui.com/primitives">forrás</a></li>
+<li><span class="citation"
+data-cites="radix-ui/react-roving-focus">@radix-ui/react-roving-focus</span>
+1.1.12 — <a href="https://radix-ui.com/primitives">forrás</a></li>
+<li><span class="citation"
+data-cites="radix-ui/react-slot">@radix-ui/react-slot</span> 1.2.5 — <a
+href="https://radix-ui.com/primitives">forrás</a></li>
+<li><span class="citation"
+data-cites="radix-ui/react-tabs">@radix-ui/react-tabs</span> 1.1.14 — <a
+href="https://radix-ui.com/primitives">forrás</a></li>
+<li><span class="citation"
+data-cites="radix-ui/react-use-callback-ref">@radix-ui/react-use-callback-ref</span>
+1.1.2 — <a href="https://radix-ui.com/primitives">forrás</a></li>
+<li><span class="citation"
+data-cites="radix-ui/react-use-controllable-state">@radix-ui/react-use-controllable-state</span>
+1.2.3 — <a href="https://radix-ui.com/primitives">forrás</a></li>
+<li><span class="citation"
+data-cites="radix-ui/react-use-effect-event">@radix-ui/react-use-effect-event</span>
+0.0.3 — <a href="https://radix-ui.com/primitives">forrás</a></li>
+<li><span class="citation"
+data-cites="radix-ui/react-use-escape-keydown">@radix-ui/react-use-escape-keydown</span>
+1.1.2 — <a href="https://radix-ui.com/primitives">forrás</a></li>
+<li><span class="citation"
+data-cites="radix-ui/react-use-layout-effect">@radix-ui/react-use-layout-effect</span>
+1.1.2 — <a href="https://radix-ui.com/primitives">forrás</a></li>
+<li><span class="citation"
+data-cites="react-native-community/netinfo">@react-native-community/netinfo</span>
+12.0.1 — <a
+href="https://github.com/react-native-netinfo/react-native-netinfo#readme">forrás</a></li>
+<li><span class="citation"
+data-cites="react-native-masked-view/masked-view">@react-native-masked-view/masked-view</span>
+0.3.2 — <a
+href="https://github.com/react-native-masked-view/masked-view#readme">forrás</a></li>
+<li><span class="citation"
+data-cites="react-native/assets-registry">@react-native/assets-registry</span>
+0.85.3 — <a
+href="https://github.com/facebook/react-native/tree/HEAD/packages/assets#readme">forrás</a></li>
+<li><span class="citation"
+data-cites="react-native/babel-plugin-codegen">@react-native/babel-plugin-codegen</span>
+0.85.3 — <a
+href="https://github.com/facebook/react-native/tree/HEAD/packages/babel-plugin-codegen#readme">forrás</a></li>
+<li><span class="citation"
+data-cites="react-native/codegen">@react-native/codegen</span> 0.85.3 —
+<a
+href="https://github.com/facebook/react-native/tree/HEAD/packages/react-native-codegen#readme">forrás</a></li>
+<li><span class="citation"
+data-cites="react-native/community-cli-plugin">@react-native/community-cli-plugin</span>
+0.85.3 — <a
+href="https://github.com/facebook/react-native/tree/HEAD/packages/community-cli-plugin#readme">forrás</a></li>
+<li><span class="citation"
+data-cites="react-native/debugger-shell">@react-native/debugger-shell</span>
+0.85.3 — <a
+href="https://github.com/facebook/react-native/tree/HEAD/packages/debugger-shell#readme">forrás</a></li>
+<li><span class="citation"
+data-cites="react-native/dev-middleware">@react-native/dev-middleware</span>
+0.85.3 — <a
+href="https://github.com/facebook/react-native/tree/HEAD/packages/dev-middleware#readme">forrás</a></li>
+<li><span class="citation"
+data-cites="react-native/gradle-plugin">@react-native/gradle-plugin</span>
+0.85.3 — <a
+href="https://github.com/facebook/react-native/tree/HEAD/packages/gradle-plugin#readme">forrás</a></li>
+<li><span class="citation"
+data-cites="react-native/js-polyfills">@react-native/js-polyfills</span>
+0.85.3 — <a
+href="https://github.com/facebook/react-native/tree/HEAD/packages/polyfills#readme">forrás</a></li>
+<li><span class="citation"
+data-cites="react-native/normalize-colors">@react-native/normalize-colors</span>
+0.74.89 — <a
+href="https://github.com/facebook/react-native/tree/HEAD/packages/normalize-color#readme">forrás</a></li>
+<li><span class="citation"
+data-cites="react-native/normalize-colors">@react-native/normalize-colors</span>
+0.85.3 — <a
+href="https://github.com/facebook/react-native/tree/HEAD/packages/normalize-color#readme">forrás</a></li>
+<li><span class="citation"
+data-cites="react-native/virtualized-lists">@react-native/virtualized-lists</span>
+0.85.3 — <a
+href="https://github.com/facebook/react-native/tree/HEAD/packages/virtualized-lists#readme">forrás</a></li>
+<li><span class="citation"
+data-cites="sentry-internal/browser-utils">@sentry-internal/browser-utils</span>
+10.37.0 — <a
+href="https://github.com/getsentry/sentry-javascript/tree/master/packages/browser-utils">forrás</a></li>
+<li><span class="citation"
+data-cites="sentry-internal/feedback">@sentry-internal/feedback</span>
+10.37.0 — <a
+href="https://github.com/getsentry/sentry-javascript/tree/master/packages/feedback">forrás</a></li>
+<li><span class="citation"
+data-cites="sentry-internal/replay">@sentry-internal/replay</span>
+10.37.0 — <a
+href="https://docs.sentry.io/platforms/javascript/session-replay/">forrás</a></li>
+<li><span class="citation"
+data-cites="sentry-internal/replay-canvas">@sentry-internal/replay-canvas</span>
+10.37.0 — <a
+href="https://docs.sentry.io/platforms/javascript/session-replay/">forrás</a></li>
+<li><span class="citation"
+data-cites="sentry/babel-plugin-component-annotate">@sentry/babel-plugin-component-annotate</span>
+4.8.0 — <a
+href="https://github.com/getsentry/sentry-javascript-bundler-plugins/tree/main/packages/babel-plugin-component-annotate">forrás</a></li>
+<li><span class="citation"
+data-cites="sentry/browser">@sentry/browser</span> 10.37.0 — <a
+href="https://github.com/getsentry/sentry-javascript/tree/master/packages/browser">forrás</a></li>
+<li><span class="citation" data-cites="sentry/core">@sentry/core</span>
+10.37.0 — <a
+href="https://github.com/getsentry/sentry-javascript/tree/master/packages/core">forrás</a></li>
+<li><span class="citation"
+data-cites="sentry/react">@sentry/react</span> 10.37.0 — <a
+href="https://github.com/getsentry/sentry-javascript/tree/master/packages/react">forrás</a></li>
+<li><span class="citation"
+data-cites="sentry/react-native">@sentry/react-native</span> 7.11.0 — <a
+href="https://github.com/getsentry/sentry-react-native">forrás</a></li>
+<li><span class="citation"
+data-cites="sentry/types">@sentry/types</span> 10.37.0 — <a
+href="https://github.com/getsentry/sentry-javascript/tree/master/packages/types">forrás</a></li>
+<li><span class="citation"
+data-cites="shopify/flash-list">@shopify/flash-list</span> 2.0.2 — <a
+href="https://shopify.github.io/flash-list/">forrás</a></li>
+<li><span class="citation"
+data-cites="sinclair/typebox">@sinclair/typebox</span> 0.27.10 — <a
+href="https://github.com/sinclairzx81/typebox-legacy">forrás</a></li>
+<li><span class="citation"
+data-cites="stripe/stripe-react-native">@stripe/stripe-react-native</span>
+0.64.0 — <a
+href="https://github.com/stripe/stripe-react-native/#readme">forrás</a></li>
+<li><span class="citation"
+data-cites="supabase/auth-js">@supabase/auth-js</span> 2.107.0 — <a
+href="https://github.com/supabase/supabase-js/tree/master/packages/core/auth-js">forrás</a></li>
+<li><span class="citation"
+data-cites="supabase/functions-js">@supabase/functions-js</span> 2.107.0
+— <a
+href="https://github.com/supabase/supabase-js/tree/master/packages/core/functions-js">forrás</a></li>
+<li><span class="citation"
+data-cites="supabase/phoenix">@supabase/phoenix</span> 0.4.2 — <a
+href="https://github.com/supabase/phoenix">forrás</a></li>
+<li><span class="citation"
+data-cites="supabase/postgrest-js">@supabase/postgrest-js</span> 2.107.0
+— <a
+href="https://github.com/supabase/supabase-js/tree/master/packages/core/postgrest-js">forrás</a></li>
+<li><span class="citation"
+data-cites="supabase/realtime-js">@supabase/realtime-js</span> 2.107.0 —
+<a
+href="https://github.com/supabase/supabase-js/tree/master/packages/core/realtime-js">forrás</a></li>
+<li><span class="citation"
+data-cites="supabase/storage-js">@supabase/storage-js</span> 2.107.0 —
+<a
+href="https://github.com/supabase/supabase-js/tree/master/packages/core/storage-js">forrás</a></li>
+<li><span class="citation"
+data-cites="supabase/supabase-js">@supabase/supabase-js</span> 2.107.0 —
+<a
+href="https://github.com/supabase/supabase-js/tree/master/packages/core/supabase-js">forrás</a></li>
+<li><span class="citation"
+data-cites="tanstack/query-core">@tanstack/query-core</span> 5.101.0 —
+<a href="https://tanstack.com/query">forrás</a></li>
+<li><span class="citation"
+data-cites="tanstack/react-query">@tanstack/react-query</span> 5.101.0 —
+<a href="https://tanstack.com/query">forrás</a></li>
+<li><span class="citation"
+data-cites="testing-library/jest-dom">@testing-library/jest-dom</span>
+6.9.1 — <a
+href="https://github.com/testing-library/jest-dom#readme">forrás</a></li>
+<li><span class="citation"
+data-cites="testing-library/user-event">@testing-library/user-event</span>
+14.6.1 — <a
+href="https://github.com/testing-library/user-event#readme">forrás</a></li>
+<li><span class="citation"
+data-cites="types/geojson">@types/geojson</span> 7946.0.16 — <a
+href="https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/geojson">forrás</a></li>
+<li><span class="citation"
+data-cites="types/hammerjs">@types/hammerjs</span> 2.0.46 — <a
+href="https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/hammerjs">forrás</a></li>
+<li><span class="citation"
+data-cites="types/istanbul-lib-coverage">@types/istanbul-lib-coverage</span>
+2.0.6 — <a
+href="https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/istanbul-lib-coverage">forrás</a></li>
+<li><span class="citation"
+data-cites="types/istanbul-lib-report">@types/istanbul-lib-report</span>
+3.0.3 — <a
+href="https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/istanbul-lib-report">forrás</a></li>
+<li><span class="citation"
+data-cites="types/istanbul-reports">@types/istanbul-reports</span> 3.0.4
+— <a
+href="https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/istanbul-reports">forrás</a></li>
+<li><span class="citation" data-cites="types/node">@types/node</span>
+25.9.2 — <a
+href="https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/node">forrás</a></li>
+<li><span class="citation" data-cites="types/react">@types/react</span>
+19.2.17 — <a
+href="https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react">forrás</a></li>
+<li><span class="citation"
+data-cites="types/react-test-renderer">@types/react-test-renderer</span>
+19.1.0 — <a
+href="https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react-test-renderer">forrás</a></li>
+<li><span class="citation" data-cites="types/yargs">@types/yargs</span>
+17.0.35 — <a
+href="https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/yargs">forrás</a></li>
+<li><span class="citation"
+data-cites="types/yargs-parser">@types/yargs-parser</span> 21.0.3 — <a
+href="https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/yargs-parser">forrás</a></li>
+<li><span class="citation"
+data-cites="xmldom/xmldom">@xmldom/xmldom</span> 0.8.13 — <a
+href="https://github.com/xmldom/xmldom">forrás</a></li>
+<li>abort-controller 3.0.0 — <a
+href="https://github.com/mysticatea/abort-controller#readme">forrás</a></li>
+<li>accepts 1.3.8 — <a
+href="https://github.com/jshttp/accepts">forrás</a></li>
+<li>accepts 2.0.0 — <a
+href="https://github.com/jshttp/accepts">forrás</a></li>
+<li>acorn 8.16.0 — <a
+href="https://github.com/acornjs/acorn">forrás</a></li>
+<li>agent-base 6.0.2 — <a
+href="https://github.com/TooTallNate/node-agent-base">forrás</a></li>
+<li>agent-base 7.1.4 — <a
+href="https://github.com/TooTallNate/proxy-agents">forrás</a></li>
+<li>agent-cli-detector 0.1.2</li>
+<li>anser 1.4.10 — <a
+href="https://github.com/IonicaBizau/anser#readme">forrás</a></li>
+<li>ansi-escapes 4.3.2 — <a
+href="https://github.com/sindresorhus/ansi-escapes">forrás</a></li>
+<li>ansi-regex 4.1.1 — <a
+href="https://github.com/chalk/ansi-regex">forrás</a></li>
+<li>ansi-regex 5.0.1 — <a
+href="https://github.com/chalk/ansi-regex">forrás</a></li>
+<li>ansi-styles 3.2.1 — <a
+href="https://github.com/chalk/ansi-styles">forrás</a></li>
+<li>ansi-styles 4.3.0 — <a
+href="https://github.com/chalk/ansi-styles">forrás</a></li>
+<li>ansi-styles 5.2.0 — <a
+href="https://github.com/chalk/ansi-styles">forrás</a></li>
+<li>any-promise 1.3.0 — <a
+href="http://github.com/kevinbeaty/any-promise">forrás</a></li>
+<li>arg 4.1.3 — <a href="https://github.com/zeit/arg">forrás</a></li>
+<li>arg 5.0.2 — <a href="https://github.com/vercel/arg">forrás</a></li>
+<li>aria-hidden 1.2.6 — <a
+href="https://github.com/theKashey/aria-hidden#readme">forrás</a></li>
+<li>array-timsort 1.0.3 — <a
+href="https://github.com/kaelzhang/node-array-timsort">forrás</a></li>
+<li>asap 2.0.6 — <a
+href="https://github.com/kriskowal/asap">forrás</a></li>
+<li>babel-plugin-polyfill-corejs2 0.4.17 — <a
+href="https://github.com/babel/babel-polyfills">forrás</a></li>
+<li>babel-plugin-polyfill-corejs3 0.13.0 — <a
+href="https://github.com/babel/babel-polyfills">forrás</a></li>
+<li>babel-plugin-polyfill-regenerator 0.6.8 — <a
+href="https://github.com/babel/babel-polyfills">forrás</a></li>
+<li>babel-plugin-react-compiler 1.0.0 — <a
+href="https://github.com/facebook/react">forrás</a></li>
+<li>babel-plugin-react-native-web 0.21.2 — <a
+href="https://github.com/necolas/react-native-web">forrás</a></li>
+<li>babel-plugin-syntax-hermes-parser 0.33.3 — <a
+href="https://github.com/facebook/hermes">forrás</a></li>
+<li>babel-plugin-transform-flow-enums 0.0.2 — <a
+href="https://github.com/facebook/flow">forrás</a></li>
+<li>babel-preset-expo 56.0.18 — <a
+href="https://github.com/expo/expo/tree/main/packages/babel-preset-expo#readme">forrás</a></li>
+<li>badgin 1.2.3 — <a
+href="https://github.com/jaulz/badgin">forrás</a></li>
+<li>balanced-match 4.0.4 — <a
+href="https://github.com/juliangruber/balanced-match">forrás</a></li>
+<li>base64-js 1.5.1 — <a
+href="https://github.com/beatgammit/base64-js">forrás</a></li>
+<li>binary-extensions 2.3.0 — <a
+href="https://github.com/sindresorhus/binary-extensions">forrás</a></li>
+<li>bplist-creator 0.1.0 — <a
+href="https://github.com/nearinfinity/node-bplist-creator">forrás</a></li>
+<li>bplist-parser 0.3.1 — <a
+href="https://github.com/nearinfinity/node-bplist-parser">forrás</a></li>
+<li>bplist-parser 0.3.2 — <a
+href="https://github.com/nearinfinity/node-bplist-parser">forrás</a></li>
+<li>brace-expansion 5.0.6 — <a
+href="https://github.com/juliangruber/brace-expansion">forrás</a></li>
+<li>braces 3.0.3 — <a
+href="https://github.com/micromatch/braces">forrás</a></li>
+<li>browserslist 4.28.1 — <a
+href="https://github.com/browserslist/browserslist">forrás</a></li>
+<li>browserslist 4.28.2 — <a
+href="https://github.com/browserslist/browserslist">forrás</a></li>
+<li>buffer-from 1.1.2 — <a
+href="https://github.com/LinusU/buffer-from">forrás</a></li>
+<li>bytes 3.1.2 — <a
+href="https://github.com/visionmedia/bytes.js">forrás</a></li>
+<li>camelcase 6.3.0 — <a
+href="https://github.com/sindresorhus/camelcase">forrás</a></li>
+<li>camelcase-css 2.0.1 — <a
+href="https://github.com/stevenvachon/camelcase-css">forrás</a></li>
+<li>chalk 2.4.2 — <a
+href="https://github.com/chalk/chalk">forrás</a></li>
+<li>chalk 4.1.2 — <a
+href="https://github.com/chalk/chalk">forrás</a></li>
+<li>chokidar 3.6.0 — <a
+href="https://github.com/paulmillr/chokidar">forrás</a></li>
+<li>ci-info 2.0.0 — <a
+href="https://github.com/watson/ci-info">forrás</a></li>
+<li>ci-info 3.9.0 — <a
+href="https://github.com/watson/ci-info">forrás</a></li>
+<li>cli-cursor 2.1.0 — <a
+href="https://github.com/sindresorhus/cli-cursor">forrás</a></li>
+<li>cli-spinners 2.9.2 — <a
+href="https://github.com/sindresorhus/cli-spinners">forrás</a></li>
+<li>client-only 0.0.1 — <a href="https://reactjs.org/">forrás</a></li>
+<li>clone 1.0.4 — <a
+href="https://github.com/pvorb/node-clone">forrás</a></li>
+<li>color 4.2.3 — <a
+href="https://github.com/Qix-/color">forrás</a></li>
+<li>color-convert 1.9.3 — <a
+href="https://github.com/Qix-/color-convert">forrás</a></li>
+<li>color-convert 2.0.1 — <a
+href="https://github.com/Qix-/color-convert">forrás</a></li>
+<li>color-name 1.1.3 — <a
+href="https://github.com/dfcreative/color-name">forrás</a></li>
+<li>color-name 1.1.4 — <a
+href="https://github.com/colorjs/color-name">forrás</a></li>
+<li>color-string 1.9.1 — <a
+href="https://github.com/Qix-/color-string">forrás</a></li>
+<li>commander 12.1.0 — <a
+href="https://github.com/tj/commander.js">forrás</a></li>
+<li>commander 2.20.3 — <a
+href="https://github.com/tj/commander.js">forrás</a></li>
+<li>commander 4.1.1 — <a
+href="https://github.com/tj/commander.js">forrás</a></li>
+<li>commander 7.2.0 — <a
+href="https://github.com/tj/commander.js">forrás</a></li>
+<li>comment-json 4.6.2 — <a
+href="https://github.com/kaelzhang/node-comment-json">forrás</a></li>
+<li>compressible 2.0.18 — <a
+href="https://github.com/jshttp/compressible">forrás</a></li>
+<li>compression 1.8.1 — <a
+href="https://github.com/expressjs/compression">forrás</a></li>
+<li>connect 3.7.0 — <a
+href="https://github.com/senchalabs/connect">forrás</a></li>
+<li>convert-source-map 2.0.0 — <a
+href="https://github.com/thlorenz/convert-source-map">forrás</a></li>
+<li>core-js-compat 3.48.0 — <a href="https://core-js.io">forrás</a></li>
+<li>cross-fetch 3.2.0 — <a
+href="https://github.com/lquixada/cross-fetch">forrás</a></li>
+<li>cross-spawn 7.0.6 — <a
+href="https://github.com/moxystudio/node-cross-spawn">forrás</a></li>
+<li>css-in-js-utils 3.1.0 — <a
+href="https://github.com/robinweser/css-in-js-utils">forrás</a></li>
+<li>css-tree 1.1.3 — <a
+href="https://github.com/csstree/csstree">forrás</a></li>
+<li>css.escape 1.5.1 — <a
+href="https://mths.be/cssescape">forrás</a></li>
+<li>cssesc 3.0.0 — <a href="https://mths.be/cssesc">forrás</a></li>
+<li>csstype 3.2.3 — <a
+href="https://github.com/frenic/csstype">forrás</a></li>
+<li>debug 2.6.9 — <a
+href="https://github.com/visionmedia/debug">forrás</a></li>
+<li>debug 3.2.7 — <a
+href="https://github.com/visionmedia/debug">forrás</a></li>
+<li>debug 4.4.3 — <a
+href="https://github.com/debug-js/debug">forrás</a></li>
+<li>decode-uri-component 0.2.2 — <a
+href="https://github.com/SamVerschueren/decode-uri-component">forrás</a></li>
+<li>deepmerge 4.3.1 — <a
+href="https://github.com/TehShrike/deepmerge">forrás</a></li>
+<li>defaults 1.0.4 — <a
+href="https://github.com/sindresorhus/node-defaults">forrás</a></li>
+<li>depd 2.0.0 — <a
+href="https://github.com/dougwilson/nodejs-depd">forrás</a></li>
+<li>destroy 1.2.0 — <a
+href="https://github.com/stream-utils/destroy">forrás</a></li>
+<li>detect-node-es 1.1.0 — <a
+href="https://github.com/thekashey/detect-node">forrás</a></li>
+<li>dlv 1.1.3 — <a
+href="https://github.com/developit/dlv">forrás</a></li>
+<li>dnssd-advertise 1.1.6 — <a
+href="https://github.com/kitten/dnssd-advertise">forrás</a></li>
+<li>dom-accessibility-api 0.6.3 — <a
+href="https://github.com/eps1lon/dom-accessibility-api">forrás</a></li>
+<li>dom-serializer 2.0.0 — <a
+href="https://github.com/cheeriojs/dom-serializer">forrás</a></li>
+<li>ee-first 1.1.1 — <a
+href="https://github.com/jonathanong/ee-first">forrás</a></li>
+<li>emoji-regex 8.0.0 — <a
+href="https://mths.be/emoji-regex">forrás</a></li>
+<li>encodeurl 1.0.2 — <a
+href="https://github.com/pillarjs/encodeurl">forrás</a></li>
+<li>encodeurl 2.0.0 — <a
+href="https://github.com/pillarjs/encodeurl">forrás</a></li>
+<li>error-stack-parser 2.1.4 — <a
+href="https://www.stacktracejs.com">forrás</a></li>
+<li>es-errors 1.3.0 — <a
+href="https://github.com/ljharb/es-errors#readme">forrás</a></li>
+<li>escalade 3.2.0 — <a
+href="https://github.com/lukeed/escalade">forrás</a></li>
+<li>escape-html 1.0.3 — <a
+href="https://github.com/component/escape-html">forrás</a></li>
+<li>escape-string-regexp 1.0.5 — <a
+href="https://github.com/sindresorhus/escape-string-regexp">forrás</a></li>
+<li>escape-string-regexp 4.0.0 — <a
+href="https://github.com/sindresorhus/escape-string-regexp">forrás</a></li>
+<li>etag 1.8.1 — <a
+href="https://github.com/jshttp/etag">forrás</a></li>
+<li>event-target-shim 5.0.1 — <a
+href="https://github.com/mysticatea/event-target-shim">forrás</a></li>
+<li>expo 56.0.17 — <a
+href="https://github.com/expo/expo/tree/main/packages/expo">forrás</a></li>
+<li>expo-apple-authentication 56.0.4 — <a
+href="https://docs.expo.dev/versions/latest/sdk/apple-authentication/">forrás</a></li>
+<li>expo-application 56.0.3 — <a
+href="https://docs.expo.dev/versions/latest/sdk/application/">forrás</a></li>
+<li>expo-asset 56.0.21 — <a
+href="https://docs.expo.dev/versions/latest/sdk/asset/">forrás</a></li>
+<li>expo-auth-session 56.0.16 — <a
+href="https://docs.expo.dev/versions/latest/sdk/auth-session">forrás</a></li>
+<li>expo-blur 56.0.4 — <a
+href="https://docs.expo.dev/versions/latest/sdk/blur-view/">forrás</a></li>
+<li>expo-build-properties 56.0.24 — <a
+href="https://docs.expo.dev/versions/latest/sdk/build-properties">forrás</a></li>
+<li>expo-constants 56.0.22 — <a
+href="https://docs.expo.dev/versions/latest/sdk/constants/">forrás</a></li>
+<li>expo-crypto 56.0.4 — <a
+href="https://docs.expo.dev/versions/latest/sdk/crypto/">forrás</a></li>
+<li>expo-dev-client 56.0.24 — <a
+href="https://docs.expo.dev/versions/latest/sdk/dev-client/">forrás</a></li>
+<li>expo-dev-launcher 56.0.25 — <a
+href="https://docs.expo.dev">forrás</a></li>
+<li>expo-dev-menu 56.0.21 — <a
+href="https://docs.expo.dev">forrás</a></li>
+<li>expo-dev-menu-interface 56.0.1 — <a
+href="https://docs.expo.dev">forrás</a></li>
+<li>expo-eas-client 56.0.1 — <a
+href="https://github.com/expo/expo/tree/main/packages/expo-eas-client">forrás</a></li>
+<li>expo-file-system 56.0.8 — <a
+href="https://docs.expo.dev/versions/latest/sdk/filesystem/">forrás</a></li>
+<li>expo-font 56.0.7 — <a
+href="https://docs.expo.dev/versions/latest/sdk/font/">forrás</a></li>
+<li>expo-glass-effect 56.0.4 — <a
+href="https://docs.expo.dev/versions/latest/sdk/glass-effect/">forrás</a></li>
+<li>expo-haptics 56.0.3 — <a
+href="https://docs.expo.dev/versions/latest/sdk/haptics/">forrás</a></li>
+<li>expo-image 56.0.11 — <a
+href="https://docs.expo.dev/versions/latest/sdk/image/">forrás</a></li>
+<li>expo-json-utils 56.0.0 — <a
+href="https://docs.expo.dev">forrás</a></li>
+<li>expo-keep-awake 56.0.3 — <a
+href="https://docs.expo.dev/versions/latest/sdk/keep-awake/">forrás</a></li>
+<li>expo-linking 56.0.16 — <a
+href="https://docs.expo.dev/versions/latest/sdk/linking">forrás</a></li>
+<li>expo-localization 56.0.6 — <a
+href="https://docs.expo.dev/versions/latest/sdk/localization/">forrás</a></li>
+<li>expo-location 56.0.22 — <a
+href="https://docs.expo.dev/versions/latest/sdk/location/">forrás</a></li>
+<li>expo-manifests 56.0.4 — <a
+href="https://docs.expo.dev/versions/latest/sdk/manifests/">forrás</a></li>
+<li>expo-modules-autolinking 56.0.21 — <a
+href="https://github.com/expo/expo/tree/main/packages/expo-modules-autolinking#readme">forrás</a></li>
+<li>expo-modules-core 56.0.22 — <a
+href="https://github.com/expo/expo/tree/main/packages/expo-modules-core">forrás</a></li>
+<li>expo-modules-jsi 56.0.12 — <a
+href="https://github.com/expo/expo/tree/main/packages/expo-modules-jsi">forrás</a></li>
+<li>expo-notifications 56.0.22 — <a
+href="https://docs.expo.dev/versions/latest/sdk/notifications/">forrás</a></li>
+<li>expo-router 56.2.16 — <a
+href="https://docs.expo.dev/routing/introduction/">forrás</a></li>
+<li>expo-secure-store 56.0.4 — <a
+href="https://docs.expo.dev/versions/latest/sdk/securestore/">forrás</a></li>
+<li>expo-server 56.0.5 — <a
+href="https://github.com/expo/expo/tree/main/packages/expo-server#readme">forrás</a></li>
+<li>expo-splash-screen 56.0.14 — <a
+href="https://docs.expo.dev/versions/latest/sdk/splash-screen/">forrás</a></li>
+<li>expo-status-bar 56.0.4 — <a
+href="https://docs.expo.dev/versions/latest/sdk/status-bar/">forrás</a></li>
+<li>expo-structured-headers 56.0.0 — <a
+href="https://github.com/expo/expo/tree/main/packages/expo-structured-headers">forrás</a></li>
+<li>expo-symbols 56.0.6 — <a
+href="https://docs.expo.dev/versions/latest/sdk/symbols/">forrás</a></li>
+<li>expo-system-ui 56.0.5 — <a
+href="https://docs.expo.dev/versions/latest/sdk/system-ui">forrás</a></li>
+<li>expo-task-manager 56.0.23 — <a
+href="https://docs.expo.dev/versions/latest/sdk/task-manager/">forrás</a></li>
+<li>expo-updates 56.0.26 — <a
+href="https://docs.expo.dev/versions/latest/sdk/updates/">forrás</a></li>
+<li>expo-updates-interface 56.0.2 — <a
+href="https://docs.expo.dev">forrás</a></li>
+<li>expo-web-browser 56.0.6 — <a
+href="https://docs.expo.dev/versions/latest/sdk/webbrowser/">forrás</a></li>
+<li>fast-deep-equal 3.1.3 — <a
+href="https://github.com/epoberezkin/fast-deep-equal#readme">forrás</a></li>
+<li>fast-glob 3.3.3 — <a
+href="https://github.com/mrmlnc/fast-glob">forrás</a></li>
+<li>fbjs 3.0.5 — <a
+href="https://github.com/facebook/fbjs">forrás</a></li>
+<li>fbjs-css-vars 1.0.2 — <a
+href="https://github.com/facebook/fbjs">forrás</a></li>
+<li>fdir 6.5.0 — <a
+href="https://github.com/thecodrr/fdir#readme">forrás</a></li>
+<li>fetch-nodeshim 0.4.10 — <a
+href="https://github.com/kitten/fetch-nodeshim">forrás</a></li>
+<li>fill-range 7.1.1 — <a
+href="https://github.com/jonschlinkert/fill-range">forrás</a></li>
+<li>filter-obj 1.1.0 — <a
+href="https://github.com/sindresorhus/filter-obj">forrás</a></li>
+<li>finalhandler 1.1.2 — <a
+href="https://github.com/pillarjs/finalhandler">forrás</a></li>
+<li>flow-enums-runtime 0.0.6 — <a
+href="https://github.com/facebook/flow">forrás</a></li>
+<li>fresh 0.5.2 — <a
+href="https://github.com/jshttp/fresh">forrás</a></li>
+<li>fsevents 2.3.3 — <a
+href="https://github.com/fsevents/fsevents">forrás</a></li>
+<li>function-bind 1.1.2 — <a
+href="https://github.com/Raynos/function-bind">forrás</a></li>
+<li>gensync 1.0.0-beta.2 — <a
+href="https://github.com/loganfsmyth/gensync">forrás</a></li>
+<li>get-nonce 1.0.1 — <a
+href="https://github.com/theKashey/get-nonce">forrás</a></li>
+<li>getenv 2.0.0 — <a
+href="https://github.com/ctavan/node-getenv">forrás</a></li>
+<li>has-flag 3.0.0 — <a
+href="https://github.com/sindresorhus/has-flag">forrás</a></li>
+<li>has-flag 4.0.0 — <a
+href="https://github.com/sindresorhus/has-flag">forrás</a></li>
+<li>hasown 2.0.2 — <a
+href="https://github.com/inspect-js/hasOwn#readme">forrás</a></li>
+<li>hasown 2.0.4 — <a
+href="https://github.com/inspect-js/hasOwn#readme">forrás</a></li>
+<li>hermes-compiler 250829098.0.10 — <a
+href="https://github.com/facebook/hermes">forrás</a></li>
+<li>hermes-estree 0.33.3 — <a
+href="https://github.com/facebook/hermes">forrás</a></li>
+<li>hermes-estree 0.35.0 — <a
+href="https://github.com/facebook/hermes">forrás</a></li>
+<li>hermes-parser 0.33.3 — <a
+href="https://github.com/facebook/hermes">forrás</a></li>
+<li>hermes-parser 0.35.0 — <a
+href="https://github.com/facebook/hermes">forrás</a></li>
+<li>html-parse-stringify 3.0.1 — <a
+href="https://github.com/henrikjoreteg/html-parse-stringify">forrás</a></li>
+<li>http-errors 2.0.1 — <a
+href="https://github.com/jshttp/http-errors">forrás</a></li>
+<li>https-proxy-agent 5.0.1 — <a
+href="https://github.com/TooTallNate/node-https-proxy-agent">forrás</a></li>
+<li>https-proxy-agent 7.0.6 — <a
+href="https://github.com/TooTallNate/proxy-agents">forrás</a></li>
+<li>i18next 25.8.14 — <a href="https://www.i18next.com">forrás</a></li>
+<li>iceberg-js 0.8.1 — <a
+href="https://github.com/supabase/iceberg-js#readme">forrás</a></li>
+<li>ignore 5.3.2 — <a
+href="https://github.com/kaelzhang/node-ignore">forrás</a></li>
+<li>image-size 1.2.1 — <a
+href="https://github.com/image-size/image-size">forrás</a></li>
+<li>indent-string 4.0.0 — <a
+href="https://github.com/sindresorhus/indent-string">forrás</a></li>
+<li>inline-style-prefixer 7.0.1 — <a
+href="https://github.com/robinweser/inline-style-prefixer">forrás</a></li>
+<li>invariant 2.2.4 — <a
+href="https://github.com/zertosh/invariant">forrás</a></li>
+<li>is-arrayish 0.3.4 — <a
+href="https://github.com/qix-/node-is-arrayish">forrás</a></li>
+<li>is-binary-path 2.1.0 — <a
+href="https://github.com/sindresorhus/is-binary-path">forrás</a></li>
+<li>is-core-module 2.16.1 — <a
+href="https://github.com/inspect-js/is-core-module">forrás</a></li>
+<li>is-core-module 2.16.2 — <a
+href="https://github.com/inspect-js/is-core-module">forrás</a></li>
+<li>is-docker 2.2.1 — <a
+href="https://github.com/sindresorhus/is-docker">forrás</a></li>
+<li>is-extglob 2.1.1 — <a
+href="https://github.com/jonschlinkert/is-extglob">forrás</a></li>
+<li>is-fullwidth-code-point 3.0.0 — <a
+href="https://github.com/sindresorhus/is-fullwidth-code-point">forrás</a></li>
+<li>is-glob 4.0.3 — <a
+href="https://github.com/micromatch/is-glob">forrás</a></li>
+<li>is-number 7.0.0 — <a
+href="https://github.com/jonschlinkert/is-number">forrás</a></li>
+<li>is-wsl 2.2.0 — <a
+href="https://github.com/sindresorhus/is-wsl">forrás</a></li>
+<li>jest-get-type 29.6.3 — <a
+href="https://github.com/jestjs/jest">forrás</a></li>
+<li>jest-util 29.7.0 — <a
+href="https://github.com/jestjs/jest">forrás</a></li>
+<li>jest-validate 29.7.0 — <a
+href="https://github.com/jestjs/jest">forrás</a></li>
+<li>jest-worker 29.7.0 — <a
+href="https://github.com/jestjs/jest">forrás</a></li>
+<li>jimp-compact 0.16.1 — <a
+href="https://github.com/nuxt-community/jimp-compact">forrás</a></li>
+<li>jiti 1.21.7 — <a href="https://github.com/unjs/jiti">forrás</a></li>
+<li>js-tokens 4.0.0 — <a
+href="https://github.com/lydell/js-tokens">forrás</a></li>
+<li>js-yaml 4.1.1 — <a
+href="https://github.com/nodeca/js-yaml">forrás</a></li>
+<li>jsesc 3.1.0 — <a href="https://mths.be/jsesc">forrás</a></li>
+<li>json5 2.2.3 — <a href="http://json5.org/">forrás</a></li>
+<li>kleur 3.0.3 — <a
+href="https://github.com/lukeed/kleur">forrás</a></li>
+<li>lan-network 0.2.1 — <a
+href="https://github.com/kitten/lan-network">forrás</a></li>
+<li>leven 3.1.0 — <a
+href="https://github.com/sindresorhus/leven">forrás</a></li>
+<li>libphonenumber-js 1.13.6 — <a
+href="https://gitlab.com/catamphetamine/libphonenumber-js#readme">forrás</a></li>
+<li>lilconfig 3.1.3 — <a
+href="https://github.com/antonk52/lilconfig">forrás</a></li>
+<li>lines-and-columns 1.2.4 — <a
+href="https://github.com/eventualbuddha/lines-and-columns#readme">forrás</a></li>
+<li>lodash.debounce 4.0.8 — <a
+href="https://lodash.com/">forrás</a></li>
+<li>lodash.throttle 4.1.1 — <a
+href="https://lodash.com/">forrás</a></li>
+<li>log-symbols 2.2.0 — <a
+href="https://github.com/sindresorhus/log-symbols">forrás</a></li>
+<li>loose-envify 1.4.0 — <a
+href="https://github.com/zertosh/loose-envify">forrás</a></li>
+<li>memoize-one 5.2.1 — <a
+href="https://github.com/alexreardon/memoize-one">forrás</a></li>
+<li>memoize-one 6.0.0 — <a
+href="https://github.com/alexreardon/memoize-one">forrás</a></li>
+<li>merge-stream 2.0.0 — <a
+href="https://github.com/grncdr/merge-stream">forrás</a></li>
+<li>merge2 1.4.1 — <a
+href="https://github.com/teambition/merge2">forrás</a></li>
+<li>metro 0.84.4 — <a
+href="https://github.com/facebook/metro">forrás</a></li>
+<li>metro-babel-transformer 0.84.4 — <a
+href="https://github.com/facebook/metro">forrás</a></li>
+<li>metro-cache 0.84.4 — <a
+href="https://github.com/facebook/metro">forrás</a></li>
+<li>metro-cache-key 0.84.4 — <a
+href="https://github.com/facebook/metro">forrás</a></li>
+<li>metro-config 0.84.4 — <a
+href="https://github.com/facebook/metro">forrás</a></li>
+<li>metro-core 0.84.4 — <a
+href="https://github.com/facebook/metro">forrás</a></li>
+<li>metro-file-map 0.84.4 — <a
+href="https://github.com/facebook/metro">forrás</a></li>
+<li>metro-minify-terser 0.84.4 — <a
+href="https://github.com/facebook/metro">forrás</a></li>
+<li>metro-resolver 0.84.4 — <a
+href="https://github.com/facebook/metro">forrás</a></li>
+<li>metro-runtime 0.84.4 — <a
+href="https://github.com/facebook/metro">forrás</a></li>
+<li>metro-source-map 0.84.4 — <a
+href="https://github.com/facebook/metro">forrás</a></li>
+<li>metro-symbolicate 0.84.4 — <a
+href="https://github.com/facebook/metro">forrás</a></li>
+<li>metro-transform-plugins 0.84.4 — <a
+href="https://github.com/facebook/metro">forrás</a></li>
+<li>metro-transform-worker 0.84.4 — <a
+href="https://github.com/facebook/metro">forrás</a></li>
+<li>micromatch 4.0.8 — <a
+href="https://github.com/micromatch/micromatch">forrás</a></li>
+<li>mime 1.6.0 — <a
+href="https://github.com/broofa/node-mime">forrás</a></li>
+<li>mime-db 1.52.0 — <a
+href="https://github.com/jshttp/mime-db">forrás</a></li>
+<li>mime-db 1.54.0 — <a
+href="https://github.com/jshttp/mime-db">forrás</a></li>
+<li>mime-types 2.1.35 — <a
+href="https://github.com/jshttp/mime-types">forrás</a></li>
+<li>mime-types 3.0.2 — <a
+href="https://github.com/jshttp/mime-types">forrás</a></li>
+<li>mimic-fn 1.2.0 — <a
+href="https://github.com/sindresorhus/mimic-fn">forrás</a></li>
+<li>min-indent 1.0.1 — <a
+href="https://github.com/thejameskyle/min-indent">forrás</a></li>
+<li>mkdirp 1.0.4 — <a
+href="https://github.com/isaacs/node-mkdirp">forrás</a></li>
+<li>ms 2.0.0 — <a href="https://github.com/zeit/ms">forrás</a></li>
+<li>ms 2.1.3 — <a href="https://github.com/vercel/ms">forrás</a></li>
+<li>multitars 1.0.0 — <a
+href="https://github.com/kitten/multitars">forrás</a></li>
+<li>mz 2.7.0 — <a href="https://github.com/normalize/mz">forrás</a></li>
+<li>nanoid 3.3.12 — <a
+href="https://github.com/ai/nanoid">forrás</a></li>
+<li>nativewind 4.2.5 — <a href="https://nativewind.dev">forrás</a></li>
+<li>negotiator 0.6.3 — <a
+href="https://github.com/jshttp/negotiator">forrás</a></li>
+<li>negotiator 0.6.4 — <a
+href="https://github.com/jshttp/negotiator">forrás</a></li>
+<li>negotiator 1.0.0 — <a
+href="https://github.com/jshttp/negotiator">forrás</a></li>
+<li>node-fetch 2.7.0 — <a
+href="https://github.com/bitinn/node-fetch">forrás</a></li>
+<li>node-int64 0.4.0 — <a
+href="https://github.com/broofa/node-int64">forrás</a></li>
+<li>node-releases 2.0.27 — <a
+href="https://github.com/chicoxyzzy/node-releases">forrás</a></li>
+<li>node-releases 2.0.45 — <a
+href="https://github.com/chicoxyzzy/node-releases">forrás</a></li>
+<li>normalize-path 3.0.0 — <a
+href="https://github.com/jonschlinkert/normalize-path">forrás</a></li>
+<li>nullthrows 1.1.1 — <a
+href="https://github.com/zertosh/nullthrows">forrás</a></li>
+<li>ob1 0.84.4 — <a
+href="https://github.com/facebook/metro">forrás</a></li>
+<li>object-assign 4.1.1 — <a
+href="https://github.com/sindresorhus/object-assign">forrás</a></li>
+<li>object-hash 3.0.0 — <a
+href="https://github.com/puleos/object-hash">forrás</a></li>
+<li>on-finished 2.3.0 — <a
+href="https://github.com/jshttp/on-finished">forrás</a></li>
+<li>on-finished 2.4.1 — <a
+href="https://github.com/jshttp/on-finished">forrás</a></li>
+<li>on-headers 1.1.0 — <a
+href="https://github.com/jshttp/on-headers">forrás</a></li>
+<li>onetime 2.0.1 — <a
+href="https://github.com/sindresorhus/onetime">forrás</a></li>
+<li>open 7.4.2 — <a
+href="https://github.com/sindresorhus/open">forrás</a></li>
+<li>ora 3.4.0 — <a
+href="https://github.com/sindresorhus/ora">forrás</a></li>
+<li>parse-png 2.1.0 — <a
+href="https://github.com/kevva/parse-png">forrás</a></li>
+<li>parseurl 1.3.3 — <a
+href="https://github.com/pillarjs/parseurl">forrás</a></li>
+<li>path-key 3.1.1 — <a
+href="https://github.com/sindresorhus/path-key">forrás</a></li>
+<li>path-parse 1.0.7 — <a
+href="https://github.com/jbgutierrez/path-parse#readme">forrás</a></li>
+<li>picomatch 2.3.2 — <a
+href="https://github.com/micromatch/picomatch">forrás</a></li>
+<li>picomatch 4.0.4 — <a
+href="https://github.com/micromatch/picomatch">forrás</a></li>
+<li>pify 2.3.0 — <a
+href="https://github.com/sindresorhus/pify">forrás</a></li>
+<li>pirates 4.0.7 — <a
+href="https://github.com/danez/pirates#readme">forrás</a></li>
+<li>plist 3.1.0 — <a
+href="https://github.com/TooTallNate/node-plist">forrás</a></li>
+<li>pngjs 3.4.0 — <a
+href="https://github.com/lukeapage/pngjs">forrás</a></li>
+<li>postcss 8.5.15 — <a href="https://postcss.org/">forrás</a></li>
+<li>postcss-import 15.1.0 — <a
+href="https://github.com/postcss/postcss-import">forrás</a></li>
+<li>postcss-js 4.1.0 — <a
+href="https://github.com/postcss/postcss-js">forrás</a></li>
+<li>postcss-load-config 6.0.1 — <a
+href="https://github.com/postcss/postcss-load-config">forrás</a></li>
+<li>postcss-nested 6.2.0 — <a
+href="https://github.com/postcss/postcss-nested">forrás</a></li>
+<li>postcss-selector-parser 6.1.2 — <a
+href="https://github.com/postcss/postcss-selector-parser">forrás</a></li>
+<li>postcss-value-parser 4.2.0 — <a
+href="https://github.com/TrySound/postcss-value-parser">forrás</a></li>
+<li>pretty-format 29.7.0 — <a
+href="https://github.com/jestjs/jest">forrás</a></li>
+<li>progress 2.0.3 — <a
+href="https://github.com/visionmedia/node-progress">forrás</a></li>
+<li>promise 7.3.1 — <a
+href="https://github.com/then/promise">forrás</a></li>
+<li>promise 8.3.0 — <a
+href="https://github.com/then/promise">forrás</a></li>
+<li>prompts 2.4.2 — <a
+href="https://github.com/terkelg/prompts">forrás</a></li>
+<li>proxy-from-env 1.1.0 — <a
+href="https://github.com/Rob--W/proxy-from-env#readme">forrás</a></li>
+<li>query-string 7.1.3 — <a
+href="https://github.com/sindresorhus/query-string">forrás</a></li>
+<li>queue 6.0.2 — <a
+href="https://github.com/jessetane/queue">forrás</a></li>
+<li>queue-microtask 1.2.3 — <a
+href="https://github.com/feross/queue-microtask">forrás</a></li>
+<li>range-parser 1.2.1 — <a
+href="https://github.com/jshttp/range-parser">forrás</a></li>
+<li>react 19.2.3 — <a href="https://react.dev/">forrás</a></li>
+<li>react-devtools-core 6.1.5 — <a
+href="https://github.com/facebook/react">forrás</a></li>
+<li>react-dom 19.2.3 — <a href="https://react.dev/">forrás</a></li>
+<li>react-fast-compare 3.2.2 — <a
+href="https://github.com/FormidableLabs/react-fast-compare">forrás</a></li>
+<li>react-freeze 1.0.4 — <a
+href="https://github.com/software-mansion/react-freeze">forrás</a></li>
+<li>react-i18next 16.5.6 — <a
+href="https://github.com/i18next/react-i18next">forrás</a></li>
+<li>react-is 16.13.1 — <a href="https://reactjs.org/">forrás</a></li>
+<li>react-is 18.3.1 — <a href="https://reactjs.org/">forrás</a></li>
+<li>react-is 19.2.4 — <a href="https://react.dev/">forrás</a></li>
+<li>react-native 0.85.3 — <a
+href="https://reactnative.dev/">forrás</a></li>
+<li>react-native-confetti-cannon 1.5.2 — <a
+href="https://github.com/vincentcatillon/react-native-confetti-cannon">forrás</a></li>
+<li>react-native-css-interop 0.2.5 — <a
+href="https://nativewind.dev">forrás</a></li>
+<li>react-native-drawer-layout 4.2.4 — <a
+href="https://reactnavigation.org/docs/drawer-layout/">forrás</a></li>
+<li>react-native-gesture-handler 2.31.2 — <a
+href="https://docs.swmansion.com/react-native-gesture-handler/">forrás</a></li>
+<li>react-native-gesture-image-viewer 2.3.2 — <a
+href="https://react-native-gesture-image-viewer.pages.dev">forrás</a></li>
+<li>react-native-is-edge-to-edge 1.3.1 — <a
+href="https://github.com/zoontek/react-native-edge-to-edge">forrás</a></li>
+<li>react-native-maps 1.27.2 — <a
+href="https://github.com/react-native-maps/react-native-maps#readme">forrás</a></li>
+<li>react-native-reanimated 4.3.1 — <a
+href="https://docs.swmansion.com/react-native-reanimated">forrás</a></li>
+<li>react-native-safe-area-context 5.7.0 — <a
+href="https://github.com/AppAndFlow/react-native-safe-area-context#readme">forrás</a></li>
+<li>react-native-screens 4.26.2 — <a
+href="https://github.com/software-mansion/react-native-screens#readme">forrás</a></li>
+<li>react-native-svg 15.15.4 — <a
+href="https://github.com/react-native-community/react-native-svg">forrás</a></li>
+<li>react-native-web 0.21.2 — <a
+href="https://github.com/necolas/react-native-web">forrás</a></li>
+<li>react-native-worklets 0.8.3 — <a
+href="https://docs.swmansion.com/react-native-worklets">forrás</a></li>
+<li>react-refresh 0.14.2 — <a
+href="https://reactjs.org/">forrás</a></li>
+<li>react-remove-scroll 2.7.2 — <a
+href="https://github.com/theKashey/react-remove-scroll">forrás</a></li>
+<li>react-remove-scroll-bar 2.3.8 — <a
+href="https://github.com/theKashey/react-remove-scroll-bar">forrás</a></li>
+<li>react-style-singleton 2.2.3 — <a
+href="https://github.com/theKashey/react-style-singleton#readme">forrás</a></li>
+<li>read-cache 1.0.0 — <a
+href="https://github.com/TrySound/read-cache#readme">forrás</a></li>
+<li>readdirp 3.6.0 — <a
+href="https://github.com/paulmillr/readdirp">forrás</a></li>
+<li>redent 3.0.0 — <a
+href="https://github.com/sindresorhus/redent">forrás</a></li>
+<li>regenerate 1.4.2 — <a
+href="https://mths.be/regenerate">forrás</a></li>
+<li>regenerate-unicode-properties 10.2.2 — <a
+href="https://github.com/mathiasbynens/regenerate-unicode-properties">forrás</a></li>
+<li>regenerator-runtime 0.13.11 — <a
+href="https://github.com/facebook/regenerator/tree/main/packages/runtime">forrás</a></li>
+<li>regexpu-core 6.4.0 — <a
+href="https://mths.be/regexpu">forrás</a></li>
+<li>regjsgen 0.8.0 — <a
+href="https://github.com/bnjmnt4n/regjsgen">forrás</a></li>
+<li>require-directory 2.1.1 — <a
+href="https://github.com/troygoode/node-require-directory/">forrás</a></li>
+<li>resolve 1.22.11 — <a
+href="https://github.com/browserify/resolve">forrás</a></li>
+<li>resolve 1.22.12 — <a
+href="https://github.com/browserify/resolve">forrás</a></li>
+<li>resolve-from 5.0.0 — <a
+href="https://github.com/sindresorhus/resolve-from">forrás</a></li>
+<li>resolve-workspace-root 2.0.1 — <a
+href="https://github.com/byCedric/resolve-workspace-root#readme">forrás</a></li>
+<li>restore-cursor 2.0.0 — <a
+href="https://github.com/sindresorhus/restore-cursor">forrás</a></li>
+<li>reusify 1.1.0 — <a
+href="https://github.com/mcollina/reusify#readme">forrás</a></li>
+<li>run-parallel 1.2.0 — <a
+href="https://github.com/feross/run-parallel">forrás</a></li>
+<li>safe-buffer 5.2.1 — <a
+href="https://github.com/feross/safe-buffer">forrás</a></li>
+<li>scheduler 0.27.0 — <a href="https://react.dev/">forrás</a></li>
+<li>send 0.19.2 — <a
+href="https://github.com/pillarjs/send">forrás</a></li>
+<li>serialize-error 2.1.0 — <a
+href="https://github.com/sindresorhus/serialize-error">forrás</a></li>
+<li>serve-static 1.16.3 — <a
+href="https://github.com/expressjs/serve-static">forrás</a></li>
+<li>server-only 0.0.1 — <a href="https://reactjs.org/">forrás</a></li>
+<li>setimmediate 1.0.5 — <a
+href="https://github.com/YuzuJS/setImmediate">forrás</a></li>
+<li>sf-symbols-typescript 2.2.0 — <a
+href="https://github.com/nandorojo/typescript-sf-symbols">forrás</a></li>
+<li>shallowequal 1.1.0 — <a
+href="https://github.com/dashed/shallowequal">forrás</a></li>
+<li>shebang-command 2.0.0 — <a
+href="https://github.com/kevva/shebang-command">forrás</a></li>
+<li>shebang-regex 3.0.0 — <a
+href="https://github.com/sindresorhus/shebang-regex">forrás</a></li>
+<li>shell-quote 1.8.4 — <a
+href="https://github.com/ljharb/shell-quote">forrás</a></li>
+<li>simple-plist 1.3.1 — <a
+href="https://github.com/wollardj/simple-plist">forrás</a></li>
+<li>simple-swizzle 0.2.4 — <a
+href="https://github.com/qix-/node-simple-swizzle">forrás</a></li>
+<li>sisteransi 1.0.5 — <a
+href="https://github.com/terkelg/sisteransi">forrás</a></li>
+<li>slugify 1.6.6 — <a
+href="https://github.com/simov/slugify">forrás</a></li>
+<li>source-map-support 0.5.21 — <a
+href="https://github.com/evanw/node-source-map-support">forrás</a></li>
+<li>split-on-first 1.1.0 — <a
+href="https://github.com/sindresorhus/split-on-first">forrás</a></li>
+<li>stackframe 1.3.4 — <a
+href="https://www.stacktracejs.com">forrás</a></li>
+<li>stacktrace-parser 0.1.11 — <a
+href="https://github.com/errwischt/stacktrace-parser">forrás</a></li>
+<li>standard-navigation 0.0.5 — <a
+href="https://github.com/react-navigation/standard-navigation#readme">forrás</a></li>
+<li>statuses 1.5.0 — <a
+href="https://github.com/jshttp/statuses">forrás</a></li>
+<li>statuses 2.0.2 — <a
+href="https://github.com/jshttp/statuses">forrás</a></li>
+<li>strict-uri-encode 2.0.0 — <a
+href="https://github.com/kevva/strict-uri-encode">forrás</a></li>
+<li>string-width 4.2.3 — <a
+href="https://github.com/sindresorhus/string-width">forrás</a></li>
+<li>strip-ansi 5.2.0 — <a
+href="https://github.com/chalk/strip-ansi">forrás</a></li>
+<li>strip-ansi 6.0.1 — <a
+href="https://github.com/chalk/strip-ansi">forrás</a></li>
+<li>strip-indent 3.0.0 — <a
+href="https://github.com/sindresorhus/strip-indent">forrás</a></li>
+<li>structured-headers 0.4.1 — <a
+href="https://github.com/evert/structured-header#readme">forrás</a></li>
+<li>styleq 0.1.3 — <a
+href="https://github.com/necolas/styleq">forrás</a></li>
+<li>sucrase 3.35.1 — <a
+href="https://github.com/alangpierce/sucrase">forrás</a></li>
+<li>supports-color 5.5.0 — <a
+href="https://github.com/chalk/supports-color">forrás</a></li>
+<li>supports-color 7.2.0 — <a
+href="https://github.com/chalk/supports-color">forrás</a></li>
+<li>supports-color 8.1.1 — <a
+href="https://github.com/chalk/supports-color">forrás</a></li>
+<li>supports-hyperlinks 2.3.0 — <a
+href="https://github.com/jamestalmage/supports-hyperlinks">forrás</a></li>
+<li>supports-preserve-symlinks-flag 1.0.0 — <a
+href="https://github.com/inspect-js/node-supports-preserve-symlinks-flag#readme">forrás</a></li>
+<li>tailwindcss 3.4.19 — <a
+href="https://tailwindcss.com">forrás</a></li>
+<li>terminal-link 2.1.1 — <a
+href="https://github.com/sindresorhus/terminal-link">forrás</a></li>
+<li>thenify 3.3.1 — <a
+href="https://github.com/thenables/thenify">forrás</a></li>
+<li>thenify-all 1.6.0 — <a
+href="https://github.com/thenables/thenify-all">forrás</a></li>
+<li>throat 5.0.0 — <a
+href="https://github.com/ForbesLindesay/throat">forrás</a></li>
+<li>tinyglobby 0.2.15 — <a
+href="https://superchupu.dev/tinyglobby">forrás</a></li>
+<li>tinyglobby 0.2.17 — <a
+href="https://superchupu.dev/tinyglobby">forrás</a></li>
+<li>to-regex-range 5.0.1 — <a
+href="https://github.com/micromatch/to-regex-range">forrás</a></li>
+<li>toidentifier 1.0.1 — <a
+href="https://github.com/component/toidentifier">forrás</a></li>
+<li>toqr 0.1.1 — <a
+href="https://github.com/kitten/toqr">forrás</a></li>
+<li>tr46 0.0.3 — <a
+href="https://github.com/Sebmaster/tr46.js#readme">forrás</a></li>
+<li>ua-parser-js 1.0.41 — <a href="https://uaparser.dev">forrás</a></li>
+<li>undici-types 7.24.6 — <a
+href="https://undici.nodejs.org">forrás</a></li>
+<li>unicode-canonical-property-names-ecmascript 2.0.1 — <a
+href="https://github.com/mathiasbynens/unicode-canonical-property-names-ecmascript">forrás</a></li>
+<li>unicode-match-property-ecmascript 2.0.0 — <a
+href="https://github.com/mathiasbynens/unicode-match-property-ecmascript">forrás</a></li>
+<li>unicode-match-property-value-ecmascript 2.2.1 — <a
+href="https://github.com/mathiasbynens/unicode-match-property-value-ecmascript">forrás</a></li>
+<li>unicode-property-aliases-ecmascript 2.2.0 — <a
+href="https://github.com/mathiasbynens/unicode-property-aliases-ecmascript">forrás</a></li>
+<li>unimodules-app-loader 56.0.1 — <a
+href="https://github.com/expo/expo/tree/main/packages/unimodules-app-loader">forrás</a></li>
+<li>unpipe 1.0.0 — <a
+href="https://github.com/stream-utils/unpipe">forrás</a></li>
+<li>update-browserslist-db 1.2.3 — <a
+href="https://github.com/browserslist/update-db">forrás</a></li>
+<li>use-callback-ref 1.3.3 — <a
+href="https://github.com/theKashey/use-callback-ref/">forrás</a></li>
+<li>use-latest-callback 0.2.6 — <a
+href="https://github.com/satya164/use-latest-callback">forrás</a></li>
+<li>use-sidecar 1.1.3 — <a
+href="https://github.com/theKashey/use-sidecar">forrás</a></li>
+<li>use-sync-external-store 1.6.0 — <a
+href="https://github.com/facebook/react">forrás</a></li>
+<li>util-deprecate 1.0.2 — <a
+href="https://github.com/TooTallNate/util-deprecate">forrás</a></li>
+<li>utils-merge 1.0.1 — <a
+href="https://github.com/jaredhanson/utils-merge">forrás</a></li>
+<li>uuid 7.0.3 — <a
+href="https://github.com/uuidjs/uuid">forrás</a></li>
+<li>vary 1.1.2 — <a
+href="https://github.com/jshttp/vary">forrás</a></li>
+<li>vaul 1.1.2 — <a href="https://vaul.emilkowal.ski/">forrás</a></li>
+<li>vlq 1.0.1 — <a
+href="https://github.com/Rich-Harris/vlq">forrás</a></li>
+<li>void-elements 3.1.0 — <a
+href="https://github.com/jadejs/void-elements">forrás</a></li>
+<li>warn-once 0.1.1 — <a
+href="https://github.com/satya164/warn-once">forrás</a></li>
+<li>wcwidth 1.0.1 — <a
+href="https://github.com/timoxley/wcwidth#readme">forrás</a></li>
+<li>whatwg-fetch 3.6.20 — <a
+href="https://github.com/github/fetch">forrás</a></li>
+<li>whatwg-url 5.0.0 — <a
+href="https://github.com/jsdom/whatwg-url">forrás</a></li>
+<li>whatwg-url-minimum 0.1.2 — <a
+href="https://github.com/kitten/whatwg-url-minimum">forrás</a></li>
+<li>wrap-ansi 7.0.0 — <a
+href="https://github.com/chalk/wrap-ansi">forrás</a></li>
+<li>ws 7.5.10 — <a
+href="https://github.com/websockets/ws">forrás</a></li>
+<li>ws 8.21.0 — <a
+href="https://github.com/websockets/ws">forrás</a></li>
+<li>xml2js 0.6.0 — <a
+href="https://github.com/Leonidas-from-XIV/node-xml2js">forrás</a></li>
+<li>xmlbuilder 11.0.1 — <a
+href="http://github.com/oozcitak/xmlbuilder-js">forrás</a></li>
+<li>xmlbuilder 15.1.1 — <a
+href="http://github.com/oozcitak/xmlbuilder-js">forrás</a></li>
+<li>yargs 17.7.2 — <a href="https://yargs.js.org/">forrás</a></li>
+<li>zod 3.25.76 — <a href="https://zod.dev">forrás</a></li>
+<li>zod 4.4.3 — <a href="https://zod.dev">forrás</a></li>
+<li>zustand 5.0.14 — <a
+href="https://github.com/pmndrs/zustand">forrás</a></li>
+</ul>
+<h2 id="isc-31-csomag">ISC (31 csomag)</h2>
+<ul>
+<li><span class="citation"
+data-cites="isaacs/ttlcache">@isaacs/ttlcache</span> 1.4.1 — <a
+href="https://github.com/isaacs/ttlcache">forrás</a></li>
+<li><span class="citation"
+data-cites="ungap/structured-clone">@ungap/structured-clone</span> 1.3.0
+— <a
+href="https://github.com/ungap/structured-clone#readme">forrás</a></li>
+<li>anymatch 3.1.3 — <a
+href="https://github.com/micromatch/anymatch">forrás</a></li>
+<li>boolbase 1.0.0 — <a
+href="https://github.com/fb55/boolbase">forrás</a></li>
+<li>cliui 8.0.1 — <a
+href="https://github.com/yargs/cliui">forrás</a></li>
+<li>electron-to-chromium 1.5.286 — <a
+href="https://github.com/kilian/electron-to-chromium/">forrás</a></li>
+<li>electron-to-chromium 1.5.360 — <a
+href="https://github.com/Kilian/electron-to-chromium">forrás</a></li>
+<li>fastq 1.20.1 — <a
+href="https://github.com/mcollina/fastq#readme">forrás</a></li>
+<li>get-caller-file 2.0.5 — <a
+href="https://github.com/stefanpenner/get-caller-file#readme">forrás</a></li>
+<li>glob-parent 5.1.2 — <a
+href="https://github.com/gulpjs/glob-parent">forrás</a></li>
+<li>glob-parent 6.0.2 — <a
+href="https://github.com/gulpjs/glob-parent">forrás</a></li>
+<li>graceful-fs 4.2.11 — <a
+href="https://github.com/isaacs/node-graceful-fs">forrás</a></li>
+<li>hosted-git-info 7.0.2 — <a
+href="https://github.com/npm/hosted-git-info">forrás</a></li>
+<li>inherits 2.0.4 — <a
+href="https://github.com/isaacs/inherits">forrás</a></li>
+<li>isexe 2.0.0 — <a
+href="https://github.com/isaacs/isexe#readme">forrás</a></li>
+<li>lru-cache 10.4.3 — <a
+href="https://github.com/isaacs/node-lru-cache">forrás</a></li>
+<li>lru-cache 5.1.1 — <a
+href="https://github.com/isaacs/node-lru-cache">forrás</a></li>
+<li>lucide-react-native 1.17.0 — <a
+href="https://lucide.dev">forrás</a></li>
+<li>npm-package-arg 11.0.3 — <a
+href="https://github.com/npm/npm-package-arg">forrás</a></li>
+<li>picocolors 1.1.1 — <a
+href="https://github.com/alexeyraspopov/picocolors">forrás</a></li>
+<li>proc-log 4.2.0 — <a
+href="https://github.com/npm/proc-log">forrás</a></li>
+<li>semver 6.3.1 — <a
+href="https://github.com/npm/node-semver">forrás</a></li>
+<li>semver 7.7.4 — <a
+href="https://github.com/npm/node-semver">forrás</a></li>
+<li>setprototypeof 1.2.0 — <a
+href="https://github.com/wesleytodd/setprototypeof">forrás</a></li>
+<li>signal-exit 3.0.7 — <a
+href="https://github.com/tapjs/signal-exit">forrás</a></li>
+<li>validate-npm-package-name 5.0.1 — <a
+href="https://github.com/npm/validate-npm-package-name">forrás</a></li>
+<li>which 2.0.2 — <a
+href="https://github.com/isaacs/node-which">forrás</a></li>
+<li>y18n 5.0.8 — <a href="https://github.com/yargs/y18n">forrás</a></li>
+<li>yallist 3.1.1 — <a
+href="https://github.com/isaacs/yallist">forrás</a></li>
+<li>yaml 2.9.0 — <a href="https://eemeli.org/yaml/">forrás</a></li>
+<li>yargs-parser 21.1.1 — <a
+href="https://github.com/yargs/yargs-parser">forrás</a></li>
+</ul>
+<h2 id="apache-2.0-15-csomag">Apache-2.0 (15 csomag)</h2>
+<ul>
+<li>aria-query 5.3.2 — <a
+href="https://github.com/A11yance/aria-query#readme">forrás</a></li>
+<li>baseline-browser-mapping 2.10.31 — <a
+href="https://github.com/web-platform-dx/baseline-browser-mapping">forrás</a></li>
+<li>baseline-browser-mapping 2.9.19 — <a
+href="https://github.com/web-platform-dx/baseline-browser-mapping">forrás</a></li>
+<li>bser 2.1.1 — <a
+href="https://facebook.github.io/watchman/docs/bser.html">forrás</a></li>
+<li>chrome-launcher 0.15.2 — <a
+href="https://github.com/GoogleChrome/chrome-launcher/">forrás</a></li>
+<li>chromium-edge-launcher 0.3.0 — <a
+href="https://github.com/cezaraugusto/chromium-edge-launcher/">forrás</a></li>
+<li>detect-libc 1.0.3 — <a
+href="https://github.com/lovell/detect-libc">forrás</a></li>
+<li>didyoumean 1.2.2 — <a
+href="https://github.com/dcporter/didyoumean.js">forrás</a></li>
+<li>exponential-backoff 3.1.3 — <a
+href="https://github.com/coveooss/exponential-backoff#readme">forrás</a></li>
+<li>fb-watchman 2.0.2 — <a
+href="https://facebook.github.io/watchman/">forrás</a></li>
+<li>lighthouse-logger 1.4.2</li>
+<li>marky 1.3.0 — <a
+href="https://github.com/nolanlawson/marky#readme">forrás</a></li>
+<li>ts-interface-checker 0.1.13 — <a
+href="https://github.com/gristlabs/ts-interface-checker">forrás</a></li>
+<li>walker 1.0.8 — <a
+href="https://github.com/daaku/nodejs-walker">forrás</a></li>
+<li>xcode 3.0.1 — <a
+href="https://github.com/apache/cordova-node-xcode">forrás</a></li>
+</ul>
+<h2 id="bsd-2-clause-12-csomag">BSD-2-Clause (12 csomag)</h2>
+<ul>
+<li>css-select 5.2.2 — <a
+href="https://github.com/fb55/css-select">forrás</a></li>
+<li>css-what 6.2.2 — <a
+href="https://github.com/fb55/css-what">forrás</a></li>
+<li>domelementtype 2.3.0 — <a
+href="https://github.com/fb55/domelementtype">forrás</a></li>
+<li>domhandler 5.0.3 — <a
+href="https://github.com/fb55/domhandler">forrás</a></li>
+<li>domutils 3.2.2 — <a
+href="https://github.com/fb55/domutils">forrás</a></li>
+<li>entities 4.5.0 — <a
+href="https://github.com/fb55/entities">forrás</a></li>
+<li>esprima 4.0.1 — <a href="http://esprima.org">forrás</a></li>
+<li>fontfaceobserver 2.3.0 — <a
+href="https://fontfaceobserver.com/">forrás</a></li>
+<li>nth-check 2.1.1 — <a
+href="https://github.com/fb55/nth-check">forrás</a></li>
+<li>regjsparser 0.13.0 — <a
+href="https://github.com/jviereck/regjsparser">forrás</a></li>
+<li>terser 5.46.0 — <a href="https://terser.org">forrás</a></li>
+<li>webidl-conversions 3.0.1 — <a
+href="https://github.com/jsdom/webidl-conversions">forrás</a></li>
+</ul>
+<h2 id="bsd-3-clause-10-csomag">BSD-3-Clause (10 csomag)</h2>
+<ul>
+<li><span class="citation"
+data-cites="expo/xcpretty">@expo/xcpretty</span> 4.4.4 — <a
+href="https://github.com/expo/expo-cli">forrás</a></li>
+<li><span class="citation"
+data-cites="react-native/debugger-frontend">@react-native/debugger-frontend</span>
+0.85.3 — <a
+href="https://github.com/facebook/react-native/tree/HEAD/packages/debugger-frontend#readme">forrás</a></li>
+<li>hoist-non-react-statics 3.3.2 — <a
+href="https://github.com/mridgway/hoist-non-react-statics">forrás</a></li>
+<li>hyphenate-style-name 1.1.0 — <a
+href="https://github.com/rexxars/hyphenate-style-name#readme">forrás</a></li>
+<li>makeerror 1.0.12 — <a
+href="https://github.com/daaku/nodejs-makeerror">forrás</a></li>
+<li>rtl-detect 1.1.2 — <a
+href="https://github.com/shadiabuhilal/rtl-detect">forrás</a></li>
+<li>source-map 0.5.7 — <a
+href="https://github.com/mozilla/source-map">forrás</a></li>
+<li>source-map 0.6.1 — <a
+href="https://github.com/mozilla/source-map">forrás</a></li>
+<li>source-map-js 1.2.1 — <a
+href="https://github.com/7rulnik/source-map-js">forrás</a></li>
+<li>tmpl 1.0.5 — <a
+href="https://github.com/daaku/nodejs-tmpl">forrás</a></li>
+</ul>
+<h2 id="blueoak-1.0.0-6-csomag">BlueOak-1.0.0 (6 csomag)</h2>
+<ul>
+<li>glob 13.0.6 — <a
+href="https://github.com/isaacs/node-glob">forrás</a></li>
+<li>lru-cache 11.2.6 — <a
+href="https://github.com/isaacs/node-lru-cache">forrás</a></li>
+<li>minimatch 10.2.4 — <a
+href="https://github.com/isaacs/minimatch">forrás</a></li>
+<li>minipass 7.1.3 — <a
+href="https://github.com/isaacs/minipass">forrás</a></li>
+<li>path-scurry 2.0.2 — <a
+href="https://github.com/isaacs/path-scurry">forrás</a></li>
+<li>sax 1.4.4 — <a
+href="https://github.com/isaacs/sax-js">forrás</a></li>
+</ul>
+<h2 id="mit-and-ofl-1.1-4-csomag">MIT AND OFL-1.1 (4 csomag)</h2>
+<ul>
+<li><span class="citation"
+data-cites="expo-google-fonts/archivo">@expo-google-fonts/archivo</span>
+0.4.2 — <a
+href="https://github.com/expo/google-fonts/tree/master/font-packages/archivo#readme">forrás</a></li>
+<li><span class="citation"
+data-cites="expo-google-fonts/jetbrains-mono">@expo-google-fonts/jetbrains-mono</span>
+0.4.1 — <a
+href="https://github.com/expo/google-fonts/tree/master/font-packages/jetbrains-mono#readme">forrás</a></li>
+<li><span class="citation"
+data-cites="expo-google-fonts/plus-jakarta-sans">@expo-google-fonts/plus-jakarta-sans</span>
+0.4.2 — <a
+href="https://github.com/expo/google-fonts/tree/master/font-packages/plus-jakarta-sans#readme">forrás</a></li>
+<li><span class="citation"
+data-cites="expo-google-fonts/space-grotesk">@expo-google-fonts/space-grotesk</span>
+0.4.1 — <a
+href="https://github.com/expo/google-fonts/tree/master/font-packages/space-grotesk#readme">forrás</a></li>
+</ul>
+<h2 id="mpl-2.0-3-csomag">MPL-2.0 (3 csomag)</h2>
+<ul>
+<li>lightningcss 1.27.0 — <a
+href="https://github.com/parcel-bundler/lightningcss">forrás</a></li>
+<li>lightningcss 1.31.1 — <a
+href="https://github.com/parcel-bundler/lightningcss">forrás</a></li>
+<li>lightningcss-darwin-arm64 1.27.0 — <a
+href="https://github.com/parcel-bundler/lightningcss">forrás</a></li>
+</ul>
+<h2 id="mit-or-cc0-1.0-2-csomag">(MIT OR CC0-1.0) (2 csomag)</h2>
+<ul>
+<li>type-fest 0.21.3 — <a
+href="https://github.com/sindresorhus/type-fest">forrás</a></li>
+<li>type-fest 0.7.1 — <a
+href="https://github.com/sindresorhus/type-fest">forrás</a></li>
+</ul>
+<h2 id="bsd-2-csomag">0BSD (2 csomag)</h2>
+<ul>
+<li>jsc-safe-url 0.2.4 — <a
+href="https://github.com/robhogan/jsc-safe-url#readme">forrás</a></li>
+<li>tslib 2.8.1 — <a
+href="https://www.typescriptlang.org/">forrás</a></li>
+</ul>
+<h2 id="cc-by-4.0-2-csomag">CC-BY-4.0 (2 csomag)</h2>
+<ul>
+<li>caniuse-lite 1.0.30001769 — <a
+href="https://github.com/browserslist/caniuse-lite">forrás</a></li>
+<li>caniuse-lite 1.0.30001793 — <a
+href="https://github.com/browserslist/caniuse-lite">forrás</a></li>
+</ul>
+<h2 id="fsl-1.1-mit-2-csomag">FSL-1.1-MIT (2 csomag)</h2>
+<ul>
+<li><span class="citation" data-cites="sentry/cli">@sentry/cli</span>
+2.58.4 — <a
+href="https://docs.sentry.io/hosted/learn/cli/">forrás</a></li>
+<li><span class="citation"
+data-cites="sentry/cli-darwin">@sentry/cli-darwin</span> 2.58.4 — <a
+href="https://github.com/getsentry/sentry-cli">forrás</a></li>
+</ul>
+<h2 id="unlicense-2-csomag">Unlicense (2 csomag)</h2>
+<ul>
+<li>big-integer 1.6.52 — <a
+href="https://github.com/peterolson/BigInteger.js">forrás</a></li>
+<li>stream-buffers 2.2.0 — <a
+href="https://github.com/samcday/node-stream-buffer">forrás</a></li>
+</ul>
+<h2 id="bsd-3-clause-or-gpl-2.0-1-csomag">(BSD-3-Clause OR GPL-2.0) (1
+csomag)</h2>
+<ul>
+<li>node-forge 1.4.0 — <a
+href="https://github.com/digitalbazaar/forge">forrás</a></li>
+</ul>
+<h2 id="mit-or-apache-2.0-1-csomag">(MIT OR Apache-2.0) (1 csomag)</h2>
+<ul>
+<li>fb-dotslash 0.5.8 — <a
+href="https://dotslash-cli.com/">forrás</a></li>
+</ul>
+<h2 id="cc0-1.0-1-csomag">CC0-1.0 (1 csomag)</h2>
+<ul>
+<li>mdn-data 2.0.14 — <a
+href="https://developer.mozilla.org">forrás</a></li>
+</ul>
+<h2 id="python-2.0-1-csomag">Python-2.0 (1 csomag)</h2>
+<ul>
+<li>argparse 2.0.1 — <a
+href="https://github.com/nodeca/argparse">forrás</a></li>
+</ul>
+<hr />
+<p>Ez a lista a <code>apps/mobile/package.json</code> éles függőségeiből
+és azok tranzitív függőségeiből készült (a fejlesztői eszközök nélkül).
+Kérdés esetén: support@drivengo.hu.</p>
 </main>
 <footer>© 2026 Drive &amp; Go · <a href="mailto:support@drivengo.hu">support@drivengo.hu</a></footer>
 </body>

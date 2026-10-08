@@ -36,3 +36,5 @@ while IFS= read -r -d '' f; do
   echo "built $out ($lang)"
 done < <(find src -name '*.md' -print0 | sort -z)
 touch docs/.nojekyll
+# Apex build (BASE "") serves drivengo.hu: GitHub Pages needs the CNAME file inside the published folder.
+if [ -z "$BASE" ]; then echo drivengo.hu > docs/CNAME; fi

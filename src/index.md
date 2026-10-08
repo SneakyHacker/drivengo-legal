@@ -14,4 +14,5 @@ title: Jogi dokumentumok és támogatás
 - [Terms and Conditions](legal/terms/en/)
 - [Privacy Notice](legal/privacy/en/)
 - [Cookie policy](legal/cookies/en/)
+- [Open-source acknowledgements](legal/acknowledgements/en/)
 - [Customer support](support/en/)
