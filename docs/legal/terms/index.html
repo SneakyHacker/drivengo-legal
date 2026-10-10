@@ -21,8 +21,10 @@ footer{margin-top:3rem;font-size:.85rem;opacity:.75;border-top:1px solid rgba(12
 <script>
 /* Language detection (Hungarian pages only): a browser whose languages contain no "hu" is sent to the English page,
    unless the visitor chose Hungarian by hand (localStorage dg-lang=hu); a hand-chosen English (dg-lang=en) always sends
-   to the English page. English pages never redirect back. */
-(function(){try{var c=localStorage.getItem("dg-lang");if(c==="hu")return;if(c!=="en"){var l=navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||""];for(var i=0;i<l.length;i++){if(String(l[i]).toLowerCase().indexOf("hu")===0)return}}location.replace("/legal/terms/en/")}catch(e){}})();
+   to the English page. English pages never redirect back.
+   An explicit request wins over all of that: ?lang=hu (what the app sends when its language is Hungarian, card ZbmY7yLe)
+   keeps the Hungarian page whatever the browser languages are, and is remembered like a hand choice. */
+(function(){try{if(/(?:^|[?&])lang=hu(?:&|$)/i.test(location.search)){try{localStorage.setItem("dg-lang","hu")}catch(e){}return}var c=localStorage.getItem("dg-lang");if(c==="hu")return;if(c!=="en"){var l=navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||""];for(var i=0;i<l.length;i++){if(String(l[i]).toLowerCase().indexOf("hu")===0)return}}location.replace("/legal/terms/en/")}catch(e){}})();
 </script>
 </head>
 <body>
