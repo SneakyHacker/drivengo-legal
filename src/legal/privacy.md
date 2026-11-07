@@ -2,7 +2,7 @@
 
 **Az alkalmazás felhasználóinak**
 
-Hatályos: 2026. október 5-től · Verzió: 1.0.2
+Hatályos: 2026. november 7-től · Verzió: 1.0.3
 
 Ez a tájékoztató elmondja, milyen személyes adatodat kezeljük, amikor a Drive & Go alkalmazást használod: miért és meddig, kinek adjuk át, és milyen jogaid vannak. A tájékoztatóban a „GDPR” az Európai Unió általános adatvédelmi rendelete ((EU) 2016/679 rendelet). A tájékoztató angolul is elérhető.
 
@@ -20,7 +20,7 @@ Adatvédelmi tisztviselőt nem jelöltünk ki. Adatvédelmi kérdésben a fenti 
 ## 2. Röviden
 
 - A rendeléshez szükséges adatokat (fiók, telefonszám, rendszám, számlázási adatok, rendelés, fizetés, aktív rendelés alatti hely) a veled kötött szerződés teljesítéséhez kezeljük — ezek nélkül nem tudsz rendelni.
-- Használati statisztikát és hibajelentést a telefonodról **csak a hozzájárulásoddal** gyűjtünk. Ha nem járulsz hozzá, az alkalmazás és a rendelés ugyanúgy működik, és a hozzájárulásodat bármikor visszavonhatod.
+- Használati statisztikát és hibajelentést a telefonodról **csak a hozzájárulásoddal** gyűjtünk, és a Metának (Facebook, Instagram) is csak a hozzájárulásoddal küldünk jelzést a hirdetéseink méréséhez és hatékonyabb megjelenítéséhez. Ha nem járulsz hozzá, az alkalmazás és a rendelés ugyanúgy működik, és a hozzájárulásodat bármikor visszavonhatod.
 - Az adataidat nem adjuk el. A Partner (az üzlet, amelynél rendelsz) csak azt látja, ami a rendelésed átadásához kell.
 
 ## 3. Milyen adatot, miért, milyen jogalapon, meddig?
@@ -42,12 +42,13 @@ Adatvédelmi tisztviselőt nem jelöltünk ki. Adatvédelmi kérdésben a fenti 
 | M | **Biztonsági és hibanapló a szerveren:** a kérés ideje és internetcíme (URL-je; böngészéskor ebben a helyed is szerepelhet), az IP-címed, a fiókod belső azonosítója és a hibák adatai — a neved és a rendelésed tartalma nélkül | biztonság, stabil működés | jogos érdek — GDPR 6. cikk (1) f): a szolgáltatás biztonsága és működőképessége | legfeljebb 90 napig |
 | N | **Használati statisztika és hibajelentés a telefonodról:** mely képernyőket nézed és mennyi ideig, mely gombokat nyomod meg (például kosár, fizetés, kedvenc), mit keresel, mit válaszolsz az engedélykérésekre, valamint az alkalmazás összeomlás- és hibajelentései, amelyek a hiba előtti lépéseket — köztük a szervernek küldött kéréseket, böngészéskor a helyedet is — tartalmazhatják. A használati statisztikát a fiókod belső azonosítójához kötjük (a hibajelentést nem), de a neved, az e-mail-címed, a telefonszámod és a címed nélkül, és ezekkel nem kapcsoljuk össze. | a szolgáltatás fejlesztése és hibáinak javítása | **hozzájárulás** — GDPR 6. cikk (1) a); az elektronikus hírközlésről szóló 2003. évi C. törvény 155. § (4) | a nyers adat 90 napig, utána csak összesítve, a fiókodhoz nem köthetően |
 | O | **A hozzájárulásod igazolása:** időpont, a szöveg változata, a választásod | hogy igazolni tudjuk a hozzájárulást | jogi kötelezettség — GDPR 6. cikk (1) c), 7. cikk (1) | amíg a hozzájáruláson alapuló adatot kezeljük, utána 5 évig |
+| P | **Meta-hirdetésmérés** — csak ha az alkalmazásban bekapcsolod, és az iPhone kérdésére a követést is engedélyezed: az alkalmazás telepítése és megnyitásai, és hogy egy-egy alkalommal mennyi ideig volt nyitva; a regisztrációd; a fizetett rendeléseid összege forintban; a készüléked hirdetési azonosítója és a követési engedélyed állapota; egy véletlenszerű azonosító, amelyet a Meta programkönyvtára a telefonodon hoz létre; az IP-címed; a készüléked alapadatai (típus, iOS-verzió, nyelv és régió, időzóna, mobilszolgáltató, képernyőméret, a processzormagok száma, az alkalmazás verziója). A neved, az e-mail-címed, a telefonszámod, a címed, a rendszámod és a rendelésed tartalma nem kerül bele. | hogy lássuk, melyik hirdetésünk hoz telepítést, regisztrációt és rendelést, és hogy a Meta ezek alapján azoknak mutassa a hirdetéseinket, akiket valószínűleg érdekel az alkalmazás | **hozzájárulás** — GDPR 6. cikk (1) a); az elektronikus hírközlésről szóló 2003. évi C. törvény 155. § (4) | mi nem tároljuk: a jelzés a telefonodról közvetlenül a Metához kerül (5.3. pont); a Meta legfeljebb két évig őrzi |
 
 **Összesített statisztika:** a szerverre amúgy is beérkező kérésekből (például keresés, kosár, fizetés indítása) felhasználói azonosító nélküli, összesített számlálást is készíthetünk. Ez nem személyes adat.
 
 ## 4. Kötelező-e megadni az adatokat?
 
-A telefonszám, a rendszám és az országjelzés, valamint a számlázási adatok (3. pont, B, C és I sor) megadása a **rendelés feltétele**: nélkülük nem tudsz rendelni. A használati statisztikához adott hozzájárulás (N sor) önkéntes; ha nem adod meg, az alkalmazás és a rendelés ugyanúgy működik. A helymeghatározás engedélye nélkül is böngészhetsz és rendelhetsz; ilyenkor érkezéskor a „Megérkeztem” gombot használod.
+A telefonszám, a rendszám és az országjelzés, valamint a számlázási adatok (3. pont, B, C és I sor) megadása a **rendelés feltétele**: nélkülük nem tudsz rendelni. A használati statisztikához és a Meta-hirdetésméréshez adott hozzájárulás (N és P sor) önkéntes; ha nem adod meg, az alkalmazás és a rendelés ugyanúgy működik. A helymeghatározás engedélye nélkül is böngészhetsz és rendelhetsz; ilyenkor érkezéskor a „Megérkeztem” gombot használod.
 
 ## 5. Kik kapják meg az adataidat?
 
@@ -55,9 +56,11 @@ A telefonszám, a rendszám és az országjelzés, valamint a számlázási adat
 
 **5.2. A Stripe** a fizetés lebonyolításához (6. pont).
 
-**5.3. Hatóságok,** ha jogszabály kötelez az átadásra.
+**5.3. A Meta** (Meta Platforms Ireland Limited, Block J, Serpentine Avenue, Dublin 4, Írország), ha a Meta-hirdetésméréshez hozzájárultál (3. pont, P sor). Az adat gyűjtésében és a Metának való továbbításában a Metával **közös adatkezelők** vagyunk: a hozzájárulásod kéréséért és az erről szóló tájékoztatásért mi felelünk. Miután az adat a Metához került, azt a Meta önálló adatkezelőként kezeli, és a saját céljaira is felhasználhatja, például arra, hogy a neked mutatott hirdetéseket és tartalmakat személyre szabja. Erről a Meta adatkezelési tájékoztatója szól: facebook.com/privacy/policy. A közös adatkezeléssel kapcsolatos jogaidat nálunk és a Metánál is gyakorolhatod.
 
-**5.4. Adatfeldolgozóink** (6. pont).
+**5.4. Hatóságok,** ha jogszabály kötelez az átadásra.
+
+**5.5. Adatfeldolgozóink** (6. pont).
 
 ## 6. Adatfeldolgozók és adattovábbítás
 
@@ -77,7 +80,7 @@ Az adatexportot és a belépéssel kapcsolatos e-maileket (például jelszó-vis
 
 **6.2. Más szolgáltatók, akik az alkalmazás működése közben adatot kapnak.** Az **Apple** (Apple Distribution International Limited, Írország) az Apple-belépést, az értesítések és az élő tevékenységek (Live Activity) kézbesítését — az élő tevékenység a rendelés állapotát, a várható időt, a Partner nevét és a rendszámodat mutatja —, valamint a térképet (Apple Térkép) biztosítja. Ha az alkalmazás felajánlja a Google-belépést, és azt választod, a **Google** (Google Ireland Limited) a belépéshez kap adatot. Ők ezt a saját adatkezelési feltételeik szerint kezelik.
 
-**6.3. Adattovábbítás az EGT-n kívülre.** A 6.1. pontban felsorolt adatfeldolgozók közül azoknál, amelyek az EGT-n kívül vannak, vagy oda is továbbítanak adatot, az adatod védelmét az Európai Bizottság EU–USA adatvédelmi keretről szóló megfelelőségi határozata ((EU) 2023/1795 végrehajtási határozat) biztosítja, ha a fogadó amerikai cég részt vesz a keretben, egyébként az Európai Bizottság által elfogadott általános szerződési feltételek (SCC). A Supabase esetében az általános szerződési feltételek az irányadók. A garanciákról másolatot kérhetsz a support@drivengo.hu címen.
+**6.3. Adattovábbítás az EGT-n kívülre.** A 6.1. pontban felsorolt adatfeldolgozók közül azoknál, amelyek az EGT-n kívül vannak, vagy oda is továbbítanak adatot, az adatod védelmét az Európai Bizottság EU–USA adatvédelmi keretről szóló megfelelőségi határozata ((EU) 2023/1795 végrehajtási határozat) biztosítja, ha a fogadó amerikai cég részt vesz a keretben, egyébként az Európai Bizottság által elfogadott általános szerződési feltételek (SCC). A Supabase esetében az általános szerződési feltételek az irányadók. A garanciákról másolatot kérhetsz a support@drivengo.hu címen. A Meta (5.3. pont) a tőlünk kapott adatot az Egyesült Államokba, a Meta Platforms, Inc.-nek is továbbíthatja; a Meta adatkezelési tájékoztatója szerint ehhez az EU–USA adatvédelmi keretre és az arról szóló megfelelőségi határozatra támaszkodik.
 
 ## 7. A jogaid
 
@@ -85,7 +88,7 @@ Az adatexportot és a belépéssel kapcsolatos e-maileket (például jelszó-vis
 
 **7.2. TILTAKOZÁS.** A jogos érdeken alapuló adatkezelés (3. pont, G, L és M sor) ellen bármikor tiltakozhatsz a saját helyzeteddel kapcsolatos okból. Ilyenkor az adatot tovább nem kezeljük, kivéve, ha olyan kényszerítő erejű jogos ok indokolja, amely elsőbbséget élvez az érdekeiddel, jogaiddal és szabadságaiddal szemben, vagy ha az adat jogi igény előterjesztéséhez, érvényesítéséhez vagy védelméhez kell.
 
-**7.3. A hozzájárulásodat bármikor visszavonhatod** — a használati statisztikához adottat a support@drivengo.hu címre írt levéllel, a helymeghatározás és az értesítések engedélyét a telefonod (iOS) Beállításaiban. A visszavonás nem érinti a korábbi adatkezelés jogszerűségét.
+**7.3. A hozzájárulásodat bármikor visszavonhatod** — a használati statisztikához, a hibajelentéshez és a Meta-hirdetésméréshez adottat az alkalmazásban, a Profil → Adatvédelem → Adatvédelmi beállítások alatt, vagy a support@drivengo.hu címre írt levéllel; a követési engedélyt az iPhone Beállítások → Adatvédelem és biztonság → Követés menüpontjában, a helymeghatározás és az értesítések engedélyét szintén a telefonod (iOS) Beállításaiban. Ha a Meta-hirdetésmérést kikapcsolod, vagy a követést letiltod, a Metának több jelzést nem küldünk. A visszavonás nem érinti a korábbi adatkezelés jogszerűségét.
 
 **7.4.** A kérelmedre egy hónapon belül válaszolunk; ez indokolt esetben további két hónappal meghosszabbodhat, erről egy hónapon belül értesítünk. A kérelmet a support@drivengo.hu címen adhatod be. Az alkalmazásban a Profil → **Adataim exportálása** menüpontban az adataidról másolatot kérhetsz, a Profil → **Fiók törlése** menüpontban pedig a fiókodat törölheted. Hogy törléskor mi marad meg és meddig, a 3. pont D, F, G, H, I, J, L és M sora mondja meg.
 
@@ -114,6 +117,7 @@ A tájékoztató változásáról az alkalmazásban értesítünk. Ha egy adatot
 Az alkalmazás nem használ böngészősütit. A telefonodon a következőket tároljuk:
 
 - **a működéshez szükséges adatokat:** a bejelentkezésedet, a kosarad tartalmát, a rendszámodat, a beállításaidat, az aktív rendeléshez és a helymegosztáshoz szükséges azonosítókat, valamint az értesítésekhez szükséges azonosítót. Ezek nélkül a belépés, a kosár, a rendelés és az értesítés nem működne;
-- **a használati statisztikához tartozó adatokat:** egy véletlenszerű azonosítót, a még el nem küldött eseményeket és a hozzájárulási választásodat (3. pont, N és O sor). Az azonosítót és az eseményeket csak a hozzájárulásoddal használjuk.
+- **a használati statisztikához tartozó adatokat:** egy véletlenszerű azonosítót, a még el nem küldött eseményeket és a hozzájárulási választásodat (3. pont, N és O sor). Az azonosítót és az eseményeket csak a hozzájárulásoddal használjuk;
+- **a Meta-hirdetésméréshez tartozó adatokat,** ha bekapcsoltad, és a követést is engedélyezted: a Meta programkönyvtára egy véletlenszerű azonosítót, a még el nem küldött jelzéseket és a megnyitások időtartamának adatait tárolja a telefonodon (3. pont, P sor). A programkönyvtár csak ezután indul el.
 
 A Drive & Go jogi és ügyfélszolgálati weboldalai nem használnak sütit, és nem követik a látogatókat; a weboldalt kiszolgáló tárhelyszolgáltató a látogatók IP-címét biztonsági célból naplózhatja.

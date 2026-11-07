@@ -2,7 +2,7 @@
 
 **For users of the app**
 
-Effective from 5 October 2026 · Version 1.0.2
+Effective from 7 November 2026 · Version 1.0.3
 
 This notice explains what personal data we process when you use the Drive & Go app: why and for how long, who we share it with, and what rights you have. In this notice, "GDPR" means the European Union's General Data Protection Regulation (Regulation (EU) 2016/679). This notice is also available in Hungarian (Adatkezelési tájékoztató).
 
@@ -20,7 +20,7 @@ We have not appointed a data protection officer. For data protection questions, 
 ## 2. In short
 
 - We process the data needed for ordering (account, phone number, licence plate, billing details, order, payment, location during an active order) to perform our contract with you — without it you cannot order.
-- We collect usage statistics and error reports from your phone **only with your consent**. If you do not consent, the app and ordering work exactly the same, and you can withdraw your consent at any time.
+- We collect usage statistics and error reports from your phone **only with your consent**, and we send Meta (Facebook, Instagram) signals to measure our ads and deliver them more effectively only with your consent, too. If you do not consent, the app and ordering work exactly the same, and you can withdraw your consent at any time.
 - We do not sell your data. The Partner (the shop you order from) sees only what is needed to hand over your order.
 
 ## 3. What data, why, on what legal basis, for how long?
@@ -42,12 +42,13 @@ We have not appointed a data protection officer. For data protection questions, 
 | M | **Security and error logs on the server:** the time and URL of the request (when browsing, this may include your location), your IP address, your account's internal identifier and error details — without your name and the content of your order | security, stable operation | legitimate interest — GDPR Art. 6(1)(f): security and operability of the service | at most 90 days |
 | N | **Usage statistics and error reports from your phone:** which screens you view and for how long, which buttons you press (for example cart, payment, favourite), what you search for, how you answer permission requests, and the app's crash and error reports, which may contain the steps before the error — including requests sent to the server and, when browsing, your location. We link the usage statistics to your account's internal identifier (the error reports we do not), but not to your name, e-mail address, phone number or address, and we do not combine them with these. | improving the service and fixing its errors | **consent** — GDPR Art. 6(1)(a); section 155(4) of Hungarian Act C of 2003 on Electronic Communications | raw data for 90 days, after that only in aggregate form, not linkable to your account |
 | O | **Proof of your consent:** time, version of the text, your choice | to be able to prove consent | legal obligation — GDPR Art. 6(1)(c), Art. 7(1) | as long as we process data based on the consent, then for 5 years |
+| P | **Meta ad measurement** — only if you switch it on in the app and also allow tracking when your iPhone asks: the installation and each opening of the app, and how long it was open each time; your sign-up; the amount of your paid orders in forints; your device's advertising identifier and the status of your tracking permission; a random identifier that the Meta software library creates on your phone; your IP address; basic details of your device (model, iOS version, language and region, time zone, mobile carrier, screen size, number of processor cores, app version). Your name, e-mail address, phone number, address, licence plate and the content of your order are not included. | to see which of our ads bring installs, sign-ups and orders, and so that Meta can use them to show our ads to people likely to be interested in the app | **consent** — GDPR Art. 6(1)(a); section 155(4) of Hungarian Act C of 2003 on Electronic Communications | we do not store it: the signal goes from your phone directly to Meta (section 5.3); Meta keeps it for at most two years |
 
 **Aggregate statistics:** from requests that reach the server anyway (for example search, cart, starting a payment), we may also produce aggregate counts without any user identifier. This is not personal data.
 
 ## 4. Do you have to provide the data?
 
-Your phone number, licence plate and country code, and billing details (section 3, rows B, C and I) are a **condition of ordering**: without them you cannot order. Consent to usage statistics (row N) is voluntary; if you do not give it, the app and ordering work exactly the same. You can browse and order without allowing location access; in that case you use the "I'm here" button when you arrive.
+Your phone number, licence plate and country code, and billing details (section 3, rows B, C and I) are a **condition of ordering**: without them you cannot order. Consent to usage statistics and to Meta ad measurement (rows N and P) is voluntary; if you do not give it, the app and ordering work exactly the same. You can browse and order without allowing location access; in that case you use the "I'm here" button when you arrive.
 
 ## 5. Who receives your data?
 
@@ -55,9 +56,11 @@ Your phone number, licence plate and country code, and billing details (section 
 
 **5.2. Stripe**, to process the payment (section 6).
 
-**5.3. Authorities**, if the law requires us to disclose data.
+**5.3. Meta** (Meta Platforms Ireland Limited, Block J, Serpentine Avenue, Dublin 4, Ireland), if you have consented to Meta ad measurement (section 3, row P). For collecting the data and transmitting it to Meta, we and Meta are **joint controllers**: we are responsible for asking for your consent and for informing you about it. Once the data has reached Meta, Meta processes it as an independent controller and may also use it for its own purposes, for example to personalise the ads and content it shows you. Meta's privacy policy explains this: facebook.com/privacy/policy. You can exercise your rights relating to the joint processing both with us and with Meta.
 
-**5.4. Our processors** (section 6).
+**5.4. Authorities**, if the law requires us to disclose data.
+
+**5.5. Our processors** (section 6).
 
 ## 6. Processors and transfers
 
@@ -77,7 +80,7 @@ The data export and sign-in related e-mails (for example password reset) are del
 
 **6.2. Other providers that receive data while the app works.** **Apple** (Apple Distribution International Limited, Ireland) provides Sign in with Apple, the delivery of notifications and Live Activities — a Live Activity shows the order status, the expected time, the Partner's name and your licence plate — and the map (Apple Maps). If the app offers Google sign-in and you choose it, **Google** (Google Ireland Limited) receives data for signing in. They process this under their own privacy terms.
 
-**6.3. Transfers outside the EEA.** For those processors listed in 6.1 that are outside the EEA or also transfer data there, your data is protected by the European Commission's adequacy decision on the EU–US Data Privacy Framework (Implementing Decision (EU) 2023/1795) where the receiving US company participates in the Framework, and otherwise by the standard contractual clauses (SCCs) adopted by the European Commission. For Supabase, the standard contractual clauses apply. You can request a copy of the safeguards at support@drivengo.hu.
+**6.3. Transfers outside the EEA.** For those processors listed in 6.1 that are outside the EEA or also transfer data there, your data is protected by the European Commission's adequacy decision on the EU–US Data Privacy Framework (Implementing Decision (EU) 2023/1795) where the receiving US company participates in the Framework, and otherwise by the standard contractual clauses (SCCs) adopted by the European Commission. For Supabase, the standard contractual clauses apply. You can request a copy of the safeguards at support@drivengo.hu. Meta (section 5.3) may also transfer the data it receives from us to the United States, to Meta Platforms, Inc.; according to Meta's privacy policy, it relies on the EU–U.S. Data Privacy Framework and the related adequacy decision for this.
 
 ## 7. Your rights
 
@@ -85,7 +88,7 @@ The data export and sign-in related e-mails (for example password reset) are del
 
 **7.2. RIGHT TO OBJECT.** You can object at any time, on grounds relating to your particular situation, to processing based on legitimate interest (section 3, rows G, L and M). We then stop processing the data, unless there are compelling legitimate grounds that override your interests, rights and freedoms, or the data is needed to establish, exercise or defend legal claims.
 
-**7.3. You can withdraw your consent at any time** — consent to usage statistics by writing to support@drivengo.hu, and location and notification permissions in your phone's (iOS) Settings. Withdrawal does not affect the lawfulness of earlier processing.
+**7.3. You can withdraw your consent at any time** — consent to usage statistics, error reports and Meta ad measurement in the app under Profile → Privacy & data → Privacy choices, or by writing to support@drivengo.hu; the tracking permission under iPhone Settings → Privacy & Security → Tracking, and location and notification permissions also in your phone's (iOS) Settings. If you switch off Meta ad measurement or deny tracking, we send no further signals to Meta. Withdrawal does not affect the lawfulness of earlier processing.
 
 **7.4.** We answer your request within one month; where justified, this can be extended by two further months, in which case we tell you within one month. You can submit requests to support@drivengo.hu. In the app, you can request a copy of your data under Profile → **Export my data**, and delete your account under Profile → **Delete account**. Section 3, rows D, F, G, H, I, J, L and M explain what is kept after deletion and for how long.
 
@@ -114,6 +117,7 @@ We tell you in the app when this notice changes. If we wanted to use data for a 
 The app does not use browser cookies. We store the following on your phone:
 
 - **data needed for the app to work:** your sign-in, the content of your cart, your licence plate, your settings, the identifiers needed for an active order and for location sharing, and the identifier needed for notifications. Without these, signing in, the cart, ordering and notifications would not work;
-- **data for usage statistics:** a random identifier, events not yet sent, and your consent choice (section 3, rows N and O). We use the identifier and the events only with your consent.
+- **data for usage statistics:** a random identifier, events not yet sent, and your consent choice (section 3, rows N and O). We use the identifier and the events only with your consent;
+- **data for Meta ad measurement,** if you have switched it on and also allowed tracking: the Meta software library stores a random identifier, signals not yet sent and data on how long the app was open on your phone (section 3, row P). The library starts only after that.
 
 The Drive & Go legal and support web pages do not use cookies and do not track visitors; the hosting provider serving the website may log visitors' IP addresses for security purposes.
