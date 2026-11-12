@@ -2,7 +2,7 @@
 
 **Az alkalmazás felhasználóinak**
 
-Hatályos: 2026. november 7-től · Verzió: 1.0.3
+Hatályos: 2026. november 12-től · Verzió: 1.0.4
 
 Ez a tájékoztató elmondja, milyen személyes adatodat kezeljük, amikor a Drive & Go alkalmazást használod: miért és meddig, kinek adjuk át, és milyen jogaid vannak. A tájékoztatóban a „GDPR” az Európai Unió általános adatvédelmi rendelete ((EU) 2016/679 rendelet). A tájékoztató angolul is elérhető.
 
@@ -110,7 +110,11 @@ A Drive & Go alkalmazást csak 18. életévét betöltött személy használhatj
 
 ## 11. A tájékoztató módosítása
 
-A tájékoztató változásáról az alkalmazásban értesítünk. Ha egy adatot a gyűjtés céljától eltérő célra akarnánk használni, azt és a kapcsolódó tájékoztatást előtte közöljük veled.
+A tájékoztató hatályos változata mindig a drivengo.hu/legal/privacy oldalon olvasható; az elején a verziószám és a hatálybalépés napja áll.
+
+Ha a tájékoztató érdemben változik — például új címzett kapná meg az adataidat, azok az EGT-n kívülre kerülnének, más lenne az adatkezelő, vagy másképp gyakorolhatnád a jogaidat —, a hatálybalépés előtt külön e-mailben értesítünk arra az e-mail-címre, amely a fiókodhoz tartozik. Az e-mailben leírjuk, mi változik és mit jelent ez számodra. Úgy küldjük el, hogy a hatálybalépésig legyen időd átgondolni, és ha akarod, élni a jogaiddal, például visszavonni a hozzájárulásodat vagy tiltakozni. Ha egy új adatkezeléshez a hozzájárulásod kell, azt az alkalmazásban kérjük el, mielőtt az adatkezelés elindul. Elírás vagy más, a tartalmat nem érintő javítás miatt nem küldünk e-mailt; ezt csak az új verziószám jelzi.
+
+Ha egy adatot a gyűjtés céljától eltérő célra akarnánk használni, azt és a kapcsolódó tájékoztatást ugyanígy, előtte közöljük veled.
 
 ## 12. Sütik és a telefonodon tárolt adatok
 

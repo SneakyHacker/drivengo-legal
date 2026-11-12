@@ -2,7 +2,7 @@
 
 **For users of the app**
 
-Effective from 7 November 2026 · Version 1.0.3
+Effective from 12 November 2026 · Version 1.0.4
 
 This notice explains what personal data we process when you use the Drive & Go app: why and for how long, who we share it with, and what rights you have. In this notice, "GDPR" means the European Union's General Data Protection Regulation (Regulation (EU) 2016/679). This notice is also available in Hungarian (Adatkezelési tájékoztató).
 
@@ -110,7 +110,11 @@ Only persons aged 18 or over may use the Drive & Go app.
 
 ## 11. Changes to this notice
 
-We tell you in the app when this notice changes. If we wanted to use data for a purpose other than the one it was collected for, we would tell you about it, with the related information, in advance.
+The current version of this notice is always available at drivengo.hu/legal/privacy/en; its version number and effective date are shown at the top.
+
+If this notice changes in substance — for example, if a new recipient were to receive your data, your data were to be transferred outside the EEA, the controller were to change, or the way you can exercise your rights were to change — we will notify you, before the change takes effect, by a separate e-mail to the e-mail address linked to your account. The e-mail explains what is changing and what it means for you. We send it early enough to give you time, before the change takes effect, to consider it and, if you wish, to exercise your rights, for example to withdraw your consent or to object. If new processing requires your consent, we ask for it in the app before that processing starts. We do not send an e-mail for typos or other corrections that do not affect the content; these are shown only by a new version number.
+
+If we wanted to use data for a purpose other than the one it was collected for, we would tell you about it in the same way, with the related information, in advance.
 
 ## 12. Cookies and data stored on your phone
 
