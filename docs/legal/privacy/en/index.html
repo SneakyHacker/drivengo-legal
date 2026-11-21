@@ -25,7 +25,7 @@ footer{margin-top:3rem;font-size:.85rem;opacity:.75;border-top:1px solid rgba(12
 <main>
 <h1 id="drive-go-privacy-notice">Drive &amp; Go — Privacy Notice</h1>
 <p><strong>For users of the app</strong></p>
-<p>Effective from 12 November 2026 · Version 1.0.4</p>
+<p>Effective from 21 November 2026 · Version 1.0.5</p>
 <p>This notice explains what personal data we process when you use the
 Drive &amp; Go app: why and for how long, who we share it with, and what
 rights you have. In this notice, "GDPR" means the European Union's
@@ -51,10 +51,12 @@ licence plate, billing details, order, payment, location during an
 active order) to perform our contract with you — without it you cannot
 order.</li>
 <li>We collect usage statistics and error reports from your phone
-<strong>only with your consent</strong>, and we send Meta (Facebook,
-Instagram) signals to measure our ads and deliver them more effectively
-only with your consent, too. If you do not consent, the app and ordering
-work exactly the same, and you can withdraw your consent at any
+<strong>only with your consent</strong>. We measure our ads only with
+your consent, too: in that case we send Meta (Facebook, Instagram)
+signals to measure our ads and deliver them more effectively, on iPhone
+we also use Apple's built-in ad measurement, and on the web we note
+which ad or link brought you to us. If you do not consent, the app and
+ordering work exactly the same, and you can withdraw your consent at any
 time.</li>
 <li>We do not sell your data. The Partner (the shop you order from) sees
 only what is needed to hand over your order.</li>
@@ -236,24 +238,77 @@ years</td>
 </tr>
 <tr>
 <td>P</td>
-<td><strong>Meta ad measurement</strong> — only if you switch it on in
-the app and also allow tracking when your iPhone asks: the installation
-and each opening of the app, and how long it was open each time; your
-sign-up; the amount of your paid orders in forints; your device's
-advertising identifier and the status of your tracking permission; a
-random identifier that the Meta software library creates on your phone;
-your IP address; basic details of your device (model, iOS version,
-language and region, time zone, mobile carrier, screen size, number of
-processor cores, app version). Your name, e-mail address, phone number,
-address, licence plate and the content of your order are not
-included.</td>
+<td><strong>Meta ad measurement with Meta's software library
+(iPhone)</strong> — only if you switch on Meta ad measurement in the app
+and also allow tracking when your iPhone asks: the installation and each
+opening of the app, and how long it was open each time; your sign-up;
+the amount of your paid orders in forints; your device's advertising
+identifier and the status of your tracking permission; a random
+identifier that the Meta software library creates on your phone; your IP
+address; basic details of your device (model, iOS version, language and
+region, time zone, mobile carrier, screen size, number of processor
+cores, app version). Your name, e-mail address, phone number, address,
+licence plate and the content of your order are not included. Apple's ad
+measurement, which starts with the same switch even without the tracking
+permission, is covered by row Q.</td>
 <td>to see which of our ads bring installs, sign-ups and orders, and so
 that Meta can use them to show our ads to people likely to be interested
 in the app</td>
 <td><strong>consent</strong> — GDPR Art. 6(1)(a); section 155(4) of
 Hungarian Act C of 2003 on Electronic Communications</td>
-<td>we do not store it: the signal goes from your phone directly to Meta
-(section 5.3); Meta keeps it for at most two years</td>
+<td>we do not store the signal of Meta's software library: it goes from
+your phone directly to Meta (section 5.3); Meta keeps it for at most two
+years</td>
+</tr>
+<tr>
+<td>Q</td>
+<td><strong>Apple ad measurement (iPhone)</strong> — only if you switch
+on Meta ad measurement in the app; no tracking permission is needed for
+this. (1) When you switch it on, and again after your first paid order
+after switching it on, the app passes a number to the iPhone's built-in
+ad measurement (SKAdNetwork, AdAttributionKit). If you switch it off and
+on again, this happens again. If you installed the app from an ad, Apple
+reports this, with a delay, to the ad network that showed the ad (for
+example Meta), and also sends us a copy of that report. According to
+Apple, the information in the report that Apple signs contains no user-
+or device-specific data. (2) Your phone generates a one-time identifier
+(token), which our server sends to Apple; if you came from an Apple Ads
+ad, Apple tells us which campaign. Of this we keep only the campaign, ad
+group and keyword identifiers (row R), not the token.</td>
+<td>to see which of our ads bring installs and orders, and so that the
+ad network (for example Meta) can use this to deliver our ads more
+effectively</td>
+<td><strong>consent</strong> — GDPR Art. 6(1)(a); section 155(4) of
+Hungarian Act C of 2003 on Electronic Communications</td>
+<td>the iPhone stores the number until the report is sent; the copy sent
+to us is covered by the paragraph below the table; the campaign
+identifiers by row R</td>
+</tr>
+<tr>
+<td>R</td>
+<td><strong>Ad campaign data on our server</strong> — only if you have
+switched on ad measurement (on iPhone: “Meta ad measurement”, on the
+web: “Ad measurement”): on iPhone, the Apple Ads campaign, ad group and
+keyword identifiers (row Q); on the web, the campaign tags (UTM: source,
+medium, campaign, content, term) of the link that brought you to us. On
+the web we read the tags from the link only after you switch it on, keep
+them in your browser until you sign in (section 12), and then send them
+to our server. Until you order, we keep the data linked to your account;
+with your first order it moves to that first order and is deleted from
+your account. We do not store a device identifier, a token or the time
+of the click.</td>
+<td>to see which of our ads or links bring orders, and what a first
+order costs per channel</td>
+<td><strong>consent</strong> — GDPR Art. 6(1)(a); section 155(4) of
+Hungarian Act C of 2003 on Electronic Communications</td>
+<td>until you order, 90 days from when it was created; if you order in
+the meantime, a further 90 days from your first order, so at most about
+180 days in total. The deletion runs daily, so the data is deleted by
+the day after the deadline at the latest. If you switch off ad
+measurement, we delete it (if you are not signed in at that moment, at
+your next sign-in on this device); if you delete your account, we delete
+it together with the account. The other data of the order is kept as in
+row D.</td>
 </tr>
 </tbody>
 </table>
@@ -261,12 +316,20 @@ Hungarian Act C of 2003 on Electronic Communications</td>
 server anyway (for example search, cart, starting a payment), we may
 also produce aggregate counts without any user identifier. This is not
 personal data.</p>
+<p><strong>The copy of Apple's ad measurement report sent to us (row
+Q):</strong> of this we keep the ad network, the campaign tag, the app
+or website that showed the ad, the reported value, the day it arrived
+and some technical data (for example the report’s identifier, to filter
+out reports that arrive twice). We store the copy separately from your
+account, your orders and your device, and we do not combine it with
+them, neither by time nor by value. We use it only for aggregate ad
+measurement and do not pass it on.</p>
 <h2 id="do-you-have-to-provide-the-data">4. Do you have to provide the
 data?</h2>
 <p>Your phone number, licence plate and country code, and billing
 details (section 3, rows B, C and I) are a <strong>condition of
 ordering</strong>: without them you cannot order. Consent to usage
-statistics and to Meta ad measurement (rows N and P) is voluntary; if
+statistics and to ad measurement (rows N, P, Q and R) is voluntary; if
 you do not give it, the app and ordering work exactly the same. You can
 browse and order without allowing location access; in that case you use
 the "I'm here" button when you arrive.</p>
@@ -364,7 +427,9 @@ works.</strong> <strong>Apple</strong> (Apple Distribution International
 Limited, Ireland) provides Sign in with Apple, the delivery of
 notifications and Live Activities — a Live Activity shows the order
 status, the expected time, the Partner's name and your licence plate —
-and the map (Apple Maps). If the app offers Google sign-in and you
+and the map (Apple Maps). If you have switched on ad measurement, Apple
+also provides its built-in ad measurement and the Apple Ads campaign
+lookup (section 3, row Q). If the app offers Google sign-in and you
 choose it, <strong>Google</strong> (Google Ireland Limited) receives
 data for signing in. They process this under their own privacy
 terms.</p>
@@ -393,14 +458,20 @@ processing the data, unless there are compelling legitimate grounds that
 override your interests, rights and freedoms, or the data is needed to
 establish, exercise or defend legal claims.</p>
 <p><strong>7.3. You can withdraw your consent at any time</strong> —
-consent to usage statistics, error reports and Meta ad measurement in
-the app under Profile → Privacy &amp; data → Privacy choices, or by
-writing to support@drivengo.hu; the tracking permission under iPhone
-Settings → Privacy &amp; Security → Tracking, and location and
-notification permissions also in your phone's (iOS) Settings. If you
-switch off Meta ad measurement or deny tracking, we send no further
-signals to Meta. Withdrawal does not affect the lawfulness of earlier
-processing.</p>
+consent to usage statistics, error reports and ad measurement (on
+iPhone: “Meta ad measurement”, on the web: “Ad measurement”) in the app
+under Profile → Privacy &amp; data → Privacy choices, or by writing to
+support@drivengo.hu; the tracking permission under iPhone Settings →
+Privacy &amp; Security → Tracking, and location and notification
+permissions also in your phone's (iOS) Settings. If you switch off ad
+measurement, we send no further signals to Meta, the app passes no
+further values to Apple's ad measurement, on the web we no longer note
+where you came from, and we delete the campaign data stored on our
+server (section 3, row R). If you only deny tracking on your iPhone, we
+send no further signals to Meta, but Apple's ad measurement (row Q)
+keeps working until you switch the switch off, because it needs no
+tracking permission. Withdrawal does not affect the lawfulness of
+earlier processing.</p>
 <p><strong>7.4.</strong> We answer your request within one month; where
 justified, this can be extended by two further months, in which case we
 tell you within one month. You can submit requests to
@@ -447,9 +518,9 @@ number.</p>
 <p>If we wanted to use data for a purpose other than the one it was
 collected for, we would tell you about it in the same way, with the
 related information, in advance.</p>
-<h2 id="cookies-and-data-stored-on-your-phone">12. Cookies and data
-stored on your phone</h2>
-<p>The app does not use browser cookies. We store the following on your
+<h2 id="cookies-and-data-stored-on-your-device">12. Cookies and data
+stored on your device</h2>
+<p>The app itself does not set cookies. We store the following on your
 phone:</p>
 <ul>
 <li><strong>data needed for the app to work:</strong> your sign-in, the
@@ -464,8 +535,25 @@ We use the identifier and the events only with your consent;</li>
 it on and also allowed tracking: the Meta software library stores a
 random identifier, signals not yet sent and data on how long the app was
 open on your phone (section 3, row P). The library starts only after
-that.</li>
+that;</li>
+<li><strong>flags for ad measurement,</strong> if you have switched it
+on (section 3, rows Q and R), for example whether we have already
+reported the installation to Apple's ad measurement, whether we have
+sent the campaign token, and whether we have reported your first order.
+The iPhone itself stores the number described in row Q until the report
+is sent. Before you switch it on, we store none of these.</li>
 </ul>
+<p><strong>If you use the app on the web, in a browser,</strong> we
+store in your browser's local storage (localStorage) the data needed for
+the app to work (for example your sign-in, the content of your cart and
+your settings), your consent choice and, if you have switched on ad
+measurement, the flags above and the link's campaign tags until you sign
+in (row R). In the browser tab's temporary storage (sessionStorage) we
+note only when we last reloaded the page automatically after a faulty
+update. On the web, Stripe's software library (Stripe.js) starts when
+the page loads, for payments; Stripe may also use its own cookies and
+similar technologies to prevent fraud. Stripe's cookie policy explains
+this: stripe.com/legal/cookies-policy.</p>
 <p>The Drive &amp; Go legal and support web pages do not use cookies and
 do not track visitors; the hosting provider serving the website may log
 visitors' IP addresses for security purposes.</p>
